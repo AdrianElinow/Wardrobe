@@ -1,0 +1,149 @@
+{
+    "White": [
+        "White",
+        "Beige",
+        "Purple",
+        "Red",
+        "Magenta",
+        "Green",
+        "Blue",
+        "Brown",
+        "Orange",
+        "Dark-Blue",
+        "Black"
+    ],
+    "Beige": [
+        "Black",
+        "Brown",
+        "Red",
+        "Green",
+        "White",
+        "Light-Blue",
+        "Blue",
+        "Dark-Blue",
+        "Pink",
+        "Magenta",
+        "Purple"
+    ],
+    "Grey": [
+        "Brown",
+        "Green",
+        "Light-Blue",
+        "Red",
+        "Pink",
+        "Yellow",
+        "Orange"
+    ],
+    "Light-Blue": [
+        "Brown",
+        "Green",
+        "Magenta",
+        "Purple",
+        "Beige",
+        "Grey",
+        "Red"
+    ],
+    "Blue": [
+        "White",
+        "Beige",
+        "Yellow",
+        "Magenta",
+        "Purple",
+        "Green",
+        "Black"
+    ],
+    "Dark-Blue": [
+        "White",
+        "Beige",
+        "Yellow",
+        "Magenta",
+        "Green",
+        "Pink",
+        "Red"
+    ],
+    "Pink": [
+        "Purple",
+        "Beige",
+        "Grey",
+        "Dark-Blue"
+    ],
+    "Yellow": [
+        "Black",
+        "Brown",
+        "Grey",
+        "Dark-Blue",
+        "Blue",
+        "Orange",
+        "Green"
+    ],
+    "Orange": [
+        "White",
+        "Yellow",
+        "Black",
+        "Green",
+        "Grey"
+    ],
+    "Black": [
+        "White",
+        "Beige",
+        "Purple",
+        "Red",
+        "Magenta",
+        "Green",
+        "Blue",
+        "Brown",
+        "Orange",
+        "Yellow"
+    ],
+    "Brown": [
+        "White",
+        "Beige",
+        "Black",
+        "Red",
+        "Green",
+        "Grey",
+        "Light-Blue",
+        "Yellow",
+        "Magenta",
+        "Purple"
+    ],
+    "Green": [
+        "White",
+        "Beige",
+        "Light-Blue",
+        "Yellow",
+        "Dark-Blue",
+        "Black",
+        "Grey",
+        "Blue",
+        "Orange",
+        "Brown"
+    ],
+    "Red": [
+        "White",
+        "Beige",
+        "Light-Blue",
+        "Dark-Blue",
+        "Black",
+        "Brown",
+        "Grey"
+    ],
+    "Magenta": [
+        "White",
+        "Beige",
+        "Light-Blue",
+        "Blue",
+        "Dark-Blue",
+        "Black",
+        "Brown"
+    ],
+    "Purple": [
+        "White",
+        "Beige",
+        "Light-Blue",
+        "Pink",
+        "Blue",
+        "Brown",
+        "Black"
+    ]
+}

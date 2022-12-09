@@ -1,0 +1,144 @@
+{
+    "Hat": [],
+    "Undershirt": [],
+    "Overshirt": [
+        {
+            "Type": "Overshirt",
+            "Subtype": "sweatshirt",
+            "Description": "Grey Plain Crewneck Sweatshirt",
+            "Weather": [
+                "cold",
+                "normal"
+            ],
+            "Price": 40,
+            "Colors": "grey",
+            "Palettes": "neutral",
+            "Uses": [
+                "comfy",
+                "athletic",
+                "casual"
+            ]
+        },
+        {
+            "Type": "Overshirt",
+            "Subtype": "hoodie",
+            "Description": "Tan Weiler's hoodie",
+            "Weather": "cold",
+            "Price": 0,
+            "Colors": "beige",
+            "Palettes": "neutral",
+            "Uses": [
+                "athletic",
+                "comfy",
+                "casual"
+            ]
+        }
+    ],
+    "Jacket": [],
+    "Pants": [
+        {
+            "Type": "Pants",
+            "Subtype": "jeans",
+            "Description": "Blue Jeans",
+            "Weather": [
+                "cold",
+                "normal"
+            ],
+            "Price": 70,
+            "Colors": "blue",
+            "Palettes": "neutral",
+            "Uses": [
+                "casual",
+                "business casual"
+            ]
+        }
+    ],
+    "Footwear": [
+        {
+            "Type": "Footwear",
+            "Subtype": "boots",
+            "Description": "Red Wing Moc-Toes",
+            "Weather": "all",
+            "Price": 300,
+            "Color": "Brown",
+            "Palete": "Earth",
+            "Uses": [
+                "Casual",
+                "Comfy"
+            ]
+        },
+        {
+            "Type": "Footwear",
+            "Subtype": "boots",
+            "Description": "Thursday Captain's (brandy)",
+            "Weather": "all",
+            "Price": 200,
+            "Colors": "brown",
+            "Palettes": [
+                "earth",
+                "neutral"
+            ],
+            "Uses": [
+                "formal",
+                "casual"
+            ]
+        },
+        {
+            "Type": "Footwear",
+            "Subtype": "boots",
+            "Description": "Thursday Rogue's (taupe)",
+            "Weather": "all",
+            "Price": 200,
+            "Colors": "beige",
+            "Palettes": [
+                "neutral",
+                "earth"
+            ],
+            "Uses": [
+                "formal",
+                "business casual"
+                "casual"
+            ]
+        },
+        {
+            "Type": "Footwear",
+            "Subtype": "boots",
+            "Description": "Thorougood Black 8\" Moc-Toe Boots",
+            "Weather": "all",
+            "Price": 250,
+            "Colors": "black",
+            "Palettes": "neutral",
+            "Uses": "casual"
+        },
+        {
+            "Type": "Footwear",
+            "Subtype": "boots",
+            "Description": "Timberland's",
+            "Weather": "all",
+            "Price": 100,
+            "Colors": "beige",
+            "Palettes": [
+                "neutral",
+                "earth"
+            ],
+            "Uses": [
+                "labor",
+                "casual"
+            ]
+        },
+        {
+            "Type": "Footwear",
+            "Subtype": "sneakers",
+            "Description": "Air Force 1's",
+            "Weather": "all",
+            "Price": 150,
+            "Colors": "white",
+            "Palettes": "neutral",
+            "Uses": [
+                "casual",
+                "comfy"
+            ]
+        }
+    ],
+    "Accessories": []
+}

@@ -1,0 +1,25 @@
+{
+    "Type": "",
+    "Subtype": "",
+    "Description": "",
+    "Weather": [],
+    "Price": 0,
+    "Colors": "",
+    "Palettes": ['neutral','earth','pastel','goth','dark','light',"summer","winter","spring","fall"]
+    "Uses": ['formal','business-casual','lounge-wear','athletic','work','tactical']
+}
+
+{
+    "Hat": [],
+    "Undershirt": [],
+    "Overshirt": [],
+    "Jacket": [],
+    "Pants": [],
+    "Footwear": [],
+    "Accessories": {
+        "Eyewear":[],
+        "Rings":[],
+        "Bracelets":[],
+        "Necklaces":[]
+    }
+}

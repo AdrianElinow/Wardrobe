@@ -1,0 +1,122 @@
+
+
+hats
+undershirts
+    cutoffs
+        tie-die x2
+        purple (wcu)
+        black tank
+    t-shirts
+        black
+        dark grey
+        white sectional
+        white
+        beige
+        maroon
+        teal
+    graphic t-shirts
+    thermal
+        green
+        black
+        blue
+        teal
+        grey
+        maroon
+overshirts
+    flannels
+        grey/blue (bcas)
+        grey
+        maroon/plaid
+        grey/black
+        blue/white
+        blue/black
+        blue/green
+        brown/blue
+        green/black
+        olive/black
+        navy/white
+        teal/black
+        red/black x2
+        grey/white
+        turqoise/white
+        maroon/black
+        tan/white
+    hoodies
+        tan weilers
+        maroon weilers
+        black/teal/purple (moist)
+        dark grey (MIT)
+        purple (wcu)
+        black (gs)
+        black (rooftop voter)
+        white (upenn)
+        white (not today)
+        white (mando)
+        beige cp
+        grey (wcu)
+        pink
+        black graphic
+    sweaters
+        beige
+        black tn
+        camel tn
+        black tn
+        red
+        grey (hood)
+        navy tn
+        blue
+        grey stripe
+        grey tn
+        cable 
+        grey chevr tn
+    button-downs
+        white linen
+        denim
+        light-blue
+        black (white dot)
+        blue (white dot)
+        white
+        black
+        light-grey
+outerwear
+    denim jacket
+    white bomber
+    flecktarn
+    leather jacket
+    grey coat
+    tigerstripe coat
+    grey fleece
+    red fleece
+pants
+    sweatpants
+        black/white adidas
+        black adidas
+        white adidas
+        white
+        light grey
+        dark grey
+        grey aero joggers
+    shorts
+        black yla 
+        black
+        beige gymreapers
+        brown gymreapers
+        green zf
+        jorts
+    jeans
+    chinos
+        grey
+        black
+        black
+        khaki
+        khaki
+    cargo pants
+        camo
+footwear
+    redwings -
+    thoroughgoods
+    thursday captains (brandy) -
+    thursday jhodpurs (taupe) -
+    timberlands
+    af1s
+    white chucks
