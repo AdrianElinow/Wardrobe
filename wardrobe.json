@@ -11,7 +11,9 @@
                 "normal"
             ],
             "Price": 40,
-            "Colors": "grey",
+            "Colors": [
+                "grey"
+            ],
             "Palettes": "neutral",
             "Uses": [
                 "comfy",
@@ -25,7 +27,9 @@
             "Description": "Tan Weiler's hoodie",
             "Weather": "cold",
             "Price": 0,
-            "Colors": "beige",
+            "Colors": [
+                "beige"
+            ],
             "Palettes": "neutral",
             "Uses": [
                 "athletic",
@@ -45,11 +49,69 @@
                 "normal"
             ],
             "Price": 70,
-            "Colors": "blue",
+            "Colors": [
+                "blue"
+            ],
             "Palettes": "neutral",
             "Uses": [
                 "casual",
                 "business casual"
+            ]
+        },
+        {
+            "Type": "Pants",
+            "Subtype": "sweatpants",
+            "Description": "Black/White Adidas Trackpants",
+            "Weather": [
+                "normal"
+            ],
+            "Price": 40,
+            "Colors": [
+                "black",
+                "white"
+            ],
+            "Palettes": "neutral",
+            "Uses": [
+                "casual",
+                "comfy",
+                "gym"
+            ]
+        },
+        {
+            "Type": "Pants",
+            "Subtype": "sweatpants",
+            "Description": "White Adidas Trackpants",
+            "Weather": [
+                "normal"
+            ],
+            "Price": 40,
+            "Colors": [
+                "white"
+            ],
+            "Palettes": "neutral",
+            "Uses": [
+                "casual",
+                "comfy",
+                "gym"
+            ]
+        },
+        {
+            "Type": "Pants",
+            "Subtype": "sweatpants",
+            "Description": "Thick Black Sweatpants",
+            "Weather": [
+                "normal",
+                "cold"
+            ],
+            "Price": 30,
+            "Colors": [
+                "black"
+            ],
+            "Palettes": "neutral",
+            "Uses": [
+                "casual",
+                "comfy",
+                "gym"
             ]
         }
     ],
@@ -60,11 +122,14 @@
             "Description": "Red Wing Moc-Toes",
             "Weather": "all",
             "Price": 300,
-            "Color": "Brown",
+            "Color": [
+                "Brown"
+            ],
             "Palete": "Earth",
             "Uses": [
                 "Casual",
-                "Comfy"
+                "Comfy",
+                "business-casual"
             ]
         },
         {
@@ -73,14 +138,35 @@
             "Description": "Thursday Captain's (brandy)",
             "Weather": "all",
             "Price": 200,
-            "Colors": "brown",
+            "Colors": [
+                "brown"
+            ],
             "Palettes": [
                 "earth",
                 "neutral"
             ],
             "Uses": [
                 "formal",
-                "casual"
+                "casual",
+                "business-casual"
+            ]
+        },
+        {
+            "Type": "Footwear",
+            "Subtype": "boots",
+            "Description": "Black Thursday Zip-Ups",
+            "Weather": "all",
+            "Price": 200,
+            "Colors": [
+                "black"
+            ],
+            "Palettes": [
+                "neutral"
+            ],
+            "Uses": [
+                "formal",
+                "casual",
+                "business-casual"
             ]
         },
         {
@@ -89,14 +175,16 @@
             "Description": "Thursday Rogue's (taupe)",
             "Weather": "all",
             "Price": 200,
-            "Colors": "beige",
+            "Colors": [
+                "beige"
+            ],
             "Palettes": [
                 "neutral",
                 "earth"
             ],
             "Uses": [
                 "formal",
-                "business casual"
+                "business casual",
                 "casual"
             ]
         },
@@ -106,7 +194,9 @@
             "Description": "Thorougood Black 8\" Moc-Toe Boots",
             "Weather": "all",
             "Price": 250,
-            "Colors": "black",
+            "Colors": [
+                "black"
+            ],
             "Palettes": "neutral",
             "Uses": "casual"
         },
@@ -116,7 +206,9 @@
             "Description": "Timberland's",
             "Weather": "all",
             "Price": 100,
-            "Colors": "beige",
+            "Colors": [
+                "beige"
+            ],
             "Palettes": [
                 "neutral",
                 "earth"
@@ -132,11 +224,29 @@
             "Description": "Air Force 1's",
             "Weather": "all",
             "Price": 150,
-            "Colors": "white",
+            "Colors": [
+                "white"
+            ],
             "Palettes": "neutral",
             "Uses": [
                 "casual",
                 "comfy"
+            ]
+        },
+        {
+            "Type": "Footwear",
+            "Subtype": "sneakers",
+            "Description": "White Chucks",
+            "Weather": "all",
+            "Price": 80,
+            "Colors": [
+                "white"
+            ],
+            "Palettes": "neutral",
+            "Uses": [
+                "casual",
+                "comfy",
+                "gym"
             ]
         }
     ],

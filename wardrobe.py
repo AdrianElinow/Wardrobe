@@ -2,12 +2,42 @@
 import json, sys, pprint
 
 
+class Article():
+
+    def __init__(self,  article_type : str, 
+                        subtype: str, 
+                        description : str, 
+                        weather : list, 
+                        price : float,
+                        colors : list,
+                        palettes : list,
+                        uses : list ):
+
+        self.type = article_type
+        self.subtype = subtype
+        self.description = description
+        self.weather = weather
+        self.price = price
+        self.colors = colors
+        self.palettes = palettes
+        self.uses = uses
+
+
+    def summary(self):
+        return self.description
+
+    def __str__(self):
+        return self.summary()
+        
+
+
 def enforce_consistency( color_map ):
 
-    for color, compatibles in color_map.items():
+    for color, compatibles in color_map['compatibility'].items():
 
         for comp in compatibles:
-            if color not in color_map[comp]:
+            #print(color, compatibles, '\n\t',comp, color_map['compatibility'][comp])
+            if color not in color_map['compatibility'][comp]:
                 print("Fixing Discrepancy: ", comp,"E",color,"|",color,"/E",comp)
                 
                 color_map[comp].append(color)
@@ -100,6 +130,14 @@ def create_outfit( wardrobe ):
     print('not yet implemented')
 
 
+def save( save_filename, wardrobe ):
+
+    print("saving wardrobe as {0}".format(save_filename))
+
+    with open(save_filename,'w') as f:
+        f.write( json.dumps(wardrobe, indent=4) )
+
+
 def menu( wardrobe, menu_nav ):
 
     if not menu_nav or not wardrobe:
@@ -115,8 +153,8 @@ def menu( wardrobe, menu_nav ):
         opt = robust_str_entry('> ').lower()
 
         if opt == 'exit':
-            with open('wardrobe.json','w') as f:
-                f.write( json.dumps(wardrobe, indent=4) )
+
+            save('wardrobe.json', wardrobe)
 
             sys.exit(0)
 
