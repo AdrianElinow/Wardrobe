@@ -1,0 +1,250 @@
+{
+    "Overshirts": [
+        {
+            "article_type": "Overshirt",
+            "subtype": "sweatshirt",
+            "description": "Grey Plain Crewneck Sweatshirt",
+            "weather": [
+                "cold",
+                "normal"
+            ],
+            "price": 40,
+            "colors": [
+                "grey"
+            ],
+            "palettes": "neutral",
+            "uses": [
+                "comfy",
+                "athletic",
+                "casual"
+            ]
+        },
+        {
+            "article_type": "Overshirt",
+            "subtype": "hoodie",
+            "description": "Tan Weiler's hoodie",
+            "weather": "cold",
+            "price": 0,
+            "colors": [
+                "beige"
+            ],
+            "palettes": "neutral",
+            "uses": [
+                "athletic",
+                "comfy",
+                "casual"
+            ]
+        }
+    ],
+    "Pants": [
+        {
+            "article_type": "Pants",
+            "subtype": "jeans",
+            "description": "Blue Jeans",
+            "weather": [
+                "cold",
+                "normal"
+            ],
+            "price": 70,
+            "colors": [
+                "blue"
+            ],
+            "palettes": "neutral",
+            "uses": [
+                "casual",
+                "business casual"
+            ]
+        },
+        {
+            "article_type": "Pants",
+            "subtype": "sweatpants",
+            "description": "Black/White Adidas Trackpants",
+            "weather": [
+                "normal"
+            ],
+            "price": 40,
+            "colors": [
+                "black",
+                "white"
+            ],
+            "palettes": "neutral",
+            "uses": [
+                "casual",
+                "comfy",
+                "gym"
+            ]
+        },
+        {
+            "article_type": "Pants",
+            "subtype": "sweatpants",
+            "description": "White Adidas Trackpants",
+            "weather": [
+                "normal"
+            ],
+            "price": 40,
+            "colors": [
+                "white"
+            ],
+            "palettes": "neutral",
+            "uses": [
+                "casual",
+                "comfy",
+                "gym"
+            ]
+        },
+        {
+            "article_type": "Pants",
+            "subtype": "sweatpants",
+            "description": "Thick Black Sweatpants",
+            "weather": [
+                "normal",
+                "cold"
+            ],
+            "price": 30,
+            "colors": [
+                "black"
+            ],
+            "palettes": "neutral",
+            "uses": [
+                "casual",
+                "comfy",
+                "gym"
+            ]
+        }
+    ],
+    "Footwear": [
+        {
+            "article_type": "Footwear",
+            "subtype": "boots",
+            "description": "Red Wing Moc-Toes",
+            "weather": "all",
+            "price": 300,
+            "colors": [
+                "Brown"
+            ],
+            "palettes": "Earth",
+            "uses": [
+                "Casual",
+                "Comfy",
+                "business-casual"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "subtype": "boots",
+            "description": "Thursday Captain's (brandy)",
+            "weather": "all",
+            "price": 200,
+            "colors": [
+                "brown"
+            ],
+            "palettes": [
+                "earth",
+                "neutral"
+            ],
+            "uses": [
+                "formal",
+                "casual",
+                "business-casual"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "subtype": "boots",
+            "description": "Black Thursday Zip-Ups",
+            "weather": "all",
+            "price": 200,
+            "colors": [
+                "black"
+            ],
+            "palettes": [
+                "neutral"
+            ],
+            "uses": [
+                "formal",
+                "casual",
+                "business-casual"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "subtype": "boots",
+            "description": "Thursday Rogue's (taupe)",
+            "weather": "all",
+            "price": 200,
+            "colors": [
+                "beige"
+            ],
+            "palettes": [
+                "neutral",
+                "earth"
+            ],
+            "uses": [
+                "formal",
+                "business casual",
+                "casual"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "subtype": "boots",
+            "description": "Thorougood Black 8\" Moc-Toe Boots",
+            "weather": "all",
+            "price": 250,
+            "colors": [
+                "black"
+            ],
+            "palettes": "neutral",
+            "uses": "casual"
+        },
+        {
+            "article_type": "Footwear",
+            "subtype": "boots",
+            "description": "Timberland's",
+            "weather": "all",
+            "price": 100,
+            "colors": [
+                "beige"
+            ],
+            "palettes": [
+                "neutral",
+                "earth"
+            ],
+            "uses": [
+                "labor",
+                "casual"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "subtype": "sneakers",
+            "description": "Air Force 1's",
+            "weather": "all",
+            "price": 150,
+            "colors": [
+                "white"
+            ],
+            "palettes": "neutral",
+            "uses": [
+                "casual",
+                "comfy"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "subtype": "sneakers",
+            "description": "White Chucks",
+            "weather": "all",
+            "price": 80,
+            "colors": [
+                "white"
+            ],
+            "palettes": "neutral",
+            "uses": [
+                "casual",
+                "comfy",
+                "gym"
+            ]
+        }
+    ]
+}
