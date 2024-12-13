@@ -1,6 +1,7 @@
 
 import json, sys, pprint
 
+DEBUG = False
 
 class Article():
 
@@ -29,26 +30,32 @@ class Article():
     def __str__(self):
         return self.summary()
         
+def debug(*msgs):
+    if DEBUG:
+        print(" ".join(msgs));
 
+def enforce_consistency( fixed_data ):
 
-def enforce_consistency( color_map ):
-
-    for color, compatibles in color_map['compatibility'].items():
+    for color, compatibles in fixed_data['compatibility'].items():
 
         for comp in compatibles:
-            #print(color, compatibles, '\n\t',comp, color_map['compatibility'][comp])
-            if color not in color_map['compatibility'][comp]:
+            
+            debug(color, compatibles, '\n\t',comp, fixed_data['compatibility'][comp])
+            
+            if color not in fixed_data['compatibility'][comp]:
                 print("Fixing Discrepancy: ", comp,"E",color,"|",color,"/E",comp)
                 
-                color_map[comp].append(color)
+                fixed_data['compatibility'][comp].append(color)
 
     output = open('fixed.json','w')
 
-    output.write( json.dumps( color_map, indent=4 ) )
+    output.write( json.dumps( fixed_data, indent=4 ) )
 
     output.close()
 
-
+def list_articles(wardrobe_data, article_type):
+    
+    pass
 
 
 def robust_str_entry(prompt, options=[]):
@@ -58,7 +65,10 @@ def robust_str_entry(prompt, options=[]):
     while not entry:
 
         if options:
-            print('Options: ',' | '.join(options))
+            print('Options: ')
+        
+        for idx, opt in enumerate(options):
+            print('{0} | {1}'.format(idx, opt))
 
         entry = input(prompt).strip()
 
@@ -66,6 +76,12 @@ def robust_str_entry(prompt, options=[]):
             if entry not in options:
                 entry = None
                 print('Invalid')
+            else:    
+                try:
+                    entry = options[int(opt)]
+                except ValueError:
+                    entry = None
+                    print('Invalid')
 
     if ', ' in entry:
         return entry.split(', ')
@@ -119,7 +135,9 @@ def delete_item( wardrobe ):
     print('not yet implemented')
 
 def nav_tree( wardrobe ):
-    print('not yet implemented')
+    
+
+    pass
 
 def search_tree( wardrobe ):
     #criteria = create_item()
@@ -163,13 +181,18 @@ def menu( wardrobe, menu_nav ):
 
 
 def main():
+    
+    print('Loading application data')
+    fixed_data = json.load( open('fixed.json') )
 
-    color_map = json.load( open(sys.argv[1]) )
-
-    enforce_consistency( color_map )
-
-
-    input("Continue? > ")
+    print('Validating application data')
+    enforce_consistency( fixed_data )
+    
+    color_map = fixed_data['palettes']
+    color_compatibility = fixed_data['compatibility']
+    article_map = fixed_data['article_types']
+    
+    input("Ready? > ")
 
     menu_nav = {
         "add": add_item,
@@ -180,7 +203,6 @@ def main():
         'exit': None
     }
 
-    
     wardrobe = json.load(open('wardrobe.json')) 
 
     menu( wardrobe, menu_nav )
