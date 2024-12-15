@@ -20,7 +20,7 @@ class Article():
         self.description = description
         self.weather = weather
         self.price = price
-        self.colors = colors
+        self.colors = [ c.lower() for c in colors] if type(colors) == type([]) else []
 
     def from_json(json: Dict):
         try:
@@ -76,7 +76,7 @@ class Wardrobe():
         return []
 
 
-    def list_by(self, article_type: str ="", article_subtype: str ="", description:str ="", colors: List[str] =[], temp: str ="", price: int =0) -> List:
+    def list_by(self, article_type: str ="", article_subtype: str ="", description:str ="", colors: List[str] =[], weather: str ="", price: int =0) -> List:
         
         if article_type and article_type in self.data.keys():
             if article_subtype:
@@ -86,8 +86,34 @@ class Wardrobe():
 
         return []
 
-    def list_by_type(self, article_type: str):
+    def list_by_type(self, article_type: str) -> List[Article]:
         return self.data[article_type]
+
+    def list_by_subtypes(self, article_type: str, subtypes: List[str]) -> List[Article]:
+        articles = self.list_by_type(article_type)
+
+        return [ article for article in articles if article.article_subtype in subtypes]
+
+    def list_by_color(self, article_type: str, colors: List[str]) -> List[Article]:
+        articles = self.list_by_type(article_type)
+
+        selected_articles = [article for article in articles if Wardrobe.article_color_in_colors(article, colors) ]
+
+        return selected_articles
+
+    def article_color_in_colors(article: Article, colors: List[str]) -> bool:
+
+        for color in article.colors:
+            if color in colors:
+                return True
+
+        return False
+
+    def list_by_weather(self, article_type: str, weather: str) -> List[Article]:
+        articles = self.list_by_type(article_type)
+
+        return [article for article in articles if weather in article.weather]
+
 
     def dump(self) -> Dict:
         dump = {}
@@ -127,6 +153,7 @@ class WardrobeGenerator():
             self.color_map = self.fixed_data['compatibility']
             self.article_map = self.fixed_data['article_types']
             self.weather = self.fixed_data['weather']
+            self.uses = self.fixed_data['uses']
 
 
         except JSONDecodeError as jsonde:
@@ -197,12 +224,12 @@ class WardrobeGenerator():
         
         if len(args) == 0:
             print('Add Help -> ',
-                '[type:{{{0}}}] [subtype:{{{1}}}] [description:str] [color:str] [temperature:<{2}>] [price:<$#>]'
+                '\n\t[type:{{{0}}}]\n\t[subtype:{{{1}}}]\n\t[description:str]\n\t[color:str]\n\t[temperature:<{2}>]\n\t[price:<$#>]'
                 .format( ','.join(self.article_map.keys()), "depends on type", ','.join(self.weather)))
         
         elif len(args) == 1:
             print('Add Help -> ',
-                '[type:{{{0}}}] [subtype:{{{1}}}] [description:str] [color:str] [temperature:<{2}>] [price:<$#>]'
+                '\n\t[type:{{{0}}}]\n\t[subtype:{{{1}}}]\n\t[description:str]\n\t[color:str]\n\t[temperature:<{2}>]\n\t[price:<$#>]'
                 .format( args[0], ','.join(self.article_map[args[0]]), ','.join(self.weather)))
 
         else:
@@ -218,12 +245,12 @@ class WardrobeGenerator():
 
         if len(args) == 0:
             print('Delete Help -> ',
-                '[type:{{{0}}}] [subtype:{{{1}}}] [description:str] [color:str] [temperature:<{2}>] [price:<$#>]'
+                '\n\t[type:{{{0}}}]\n\t[subtype:{{{1}}}]\n\t[description:str]\n\t[color:str]\n\t[temperature:<{2}>]\n\t[price:<$#>]'
                 .format( ','.join(self.article_map.keys()), "depends on type", ','.join(self.weather)))
         
         elif len(args) == 1:
             print('Delete Help -> ',
-                '[type:{{{0}}}] [subtype:{{{1}}}] [description:str] [color:str] [temperature:<{2}>] [price:<$#>]'
+                '\n\t[type:{{{0}}}]\n\t[subtype:{{{1}}}]\n\t[description:str]\n\t[color:str]\n\t[temperature:<{2}>]\n\t[price:<$#>]'
                 .format( args[0], ','.join(self.article_map[args[0]]), ','.join(self.weather)))
 
         else:
@@ -253,7 +280,7 @@ class WardrobeGenerator():
 
         if len(args) == 0:
             print('List Help -> ',
-                '[type:{{{0}}}] [subtype:{{{1}}}] [color:str] [temperature:<{2}>] [price:<$#>]'
+                '\n\t[type:{{{0}}}]\n\t[subtype:{{{1}}}]\n\t[color:str]\n\t[temperature:<{2}>]\n\t[price:<$#>]'
                 .format( ','.join(self.article_map.keys()), "depends on type", ','.join(self.weather)))
         
         if len(args) == 1 and args[0] == 'All':
@@ -303,14 +330,78 @@ class WardrobeGenerator():
     def handle_generate_cli(self, args):
         debug('handle_generate_cli({0})'.format(','.join(args)))
 
-        print('Generating Randomized Outfit\n')
+        if len(args) == 0:
+            print('Generate Help:'+
+                '\n\trandom\n\tpalette: [{0}]\n\tweather: [{1}]\n\tuse: [{2}]'
+                .format( '|'.join(list(self.palettes.keys())), '|'.join(self.weather), '|'.join(self.uses)))
+        
+        elif len(args) == 1:
+            generation_rule = args[0]
 
-        for availabe_type in self.wardrobe.data.keys():
-            available_articles = self.wardrobe.list_by(availabe_type)
+            if generation_rule == "random":
+                print('Generating Randomized Outfit\n')
 
-            if(available_articles):
-                random_article = random.choice(self.wardrobe.list_by(availabe_type))
-                print("{0} | {1}".format(availabe_type, random_article))
+                for availabe_type in self.wardrobe.data.keys():
+                    available_articles = self.wardrobe.list_by(availabe_type)
+                    if available_articles:
+                        random_article = random.choice(self.wardrobe.list_by(availabe_type))
+                        print("{0} | {1}".format(availabe_type, random_article))
+
+        elif len(args) > 1:
+
+            generation_rule, generation_selection = args[0], args[1]
+
+            if generation_rule == "palette":
+                if generation_selection in self.palettes.keys():
+
+                    print("Generating from Palette {0}".format(generation_selection))
+
+                    colors_for_palette = self.palettes[generation_selection]
+                    neutral_colors = self.palettes['neutral']
+                    colors_for_palette += neutral_colors
+
+                    for availabe_type in self.wardrobe.data.keys():
+                        available_articles = self.wardrobe.list_by_color(availabe_type, colors_for_palette)
+
+                        if available_articles:
+                            random_article = random.choice(available_articles)
+                            print("{0} | {1}".format(availabe_type, random_article))
+
+            elif generation_rule == "weather":
+                if generation_selection in self.palettes.keys():
+
+                    print("Generating for {0} Weather".format(generation_selection))
+
+                    for availabe_type in self.wardrobe.data.keys():
+                        available_articles = self.wardrobe.list_by(availabe_type)
+
+                        if available_articles:
+                            articles_for_use = self.wardrobe.list_by_weather(availabe_type, generation_selection)
+
+                            if articles_for_use:
+                                random_article = random.choice(articles_for_use)
+                                print("{0} | {1}".format(availabe_type, random_article))
+
+            elif generation_rule == "use":
+                if generation_selection in self.uses:
+
+                    print("Generating for {0}".format(generation_selection))
+
+                    for availabe_type in self.wardrobe.data.keys():
+                        available_articles = self.wardrobe.list_by(availabe_type)
+
+                        if available_articles:
+                            subtypes_for_use = self.uses[generation_selection]
+    
+                            if subtypes_for_use:
+                                articles_for_use = self.wardrobe.list_by_subtypes(availabe_type, subtypes_for_use)
+
+                                if articles_for_use:
+                                    random_article = random.choice(articles_for_use)
+                                    print("{0} | {1}".format(availabe_type, random_article))
+
+
+
 
     def parse_article_cli_args(self, args):
 

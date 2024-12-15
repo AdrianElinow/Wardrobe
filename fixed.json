@@ -17,9 +17,13 @@
             "flannel",
             "hoodie",
             "sweater",
-            "oxford"
+            "oxford",
+            "zip-up"
         ],
-        "outerwear": [],
+        "outerwear": [
+            "coat",
+            "jacket"
+        ],
         "pants": [
             "jeans",
             "chinos",
@@ -29,7 +33,9 @@
         ],
         "footwear": [
             "sneakers",
-            "boots"
+            "boots",
+            "dress-shoes",
+            "slippers"
         ],
         "accessory": [
             "ring",
@@ -42,90 +48,182 @@
             "bag"
         ]
     },
-    "uses": [
-        "athletic",
-        "comfy",
-        "casual",
-        "formal",
-        "business-casual"
-    ],
+    "uses": {
+        "athletic": [
+            "ballcap",
+            "beanie",
+            "cutoff",
+            "t-shirt",
+            "thermal",
+            "briefs",
+            "thermals",
+            "hoodie",
+            "shorts",
+            "zip-up",
+            "jacket",
+            "sweatpants",
+            "sneakers"
+        ],
+        "comfy": [
+            "ballcap",
+            "beanie",
+            "cutoff",
+            "t-shirt",
+            "thermal",
+            "briefs",
+            "thermals",
+            "zip-up",
+            "flannel",
+            "hoodie",
+            "sweater",
+            "jeans",
+            "sweatpants",
+            "cargo-pants",
+            "boots",
+            "sneakers",
+            "slippers"
+        ],
+        "casual": [
+            "ballcap",
+            "beanie",
+            "t-shirt",
+            "thermal",
+            "briefs",
+            "thermals",
+            "coat",
+            "jacket",
+            "flannel",
+            "hoodie",
+            "sweater",
+            "zip-up",
+            "jeans",
+            "chinos",
+            "sweatpants",
+            "cargo-pants",
+            "boots",
+            "sneakers",
+            "slippers"
+        ],
+        "formal": [
+            "tshirt",
+            "briefs",
+            "thermals",
+            "oxford",
+            "sweater",
+            "coat",
+            "chinos",
+            "boots",
+            "dress-shoes"
+        ],
+        "business-casual": [
+            "tshirt",
+            "briefs",
+            "thermals",
+            "flannel",
+            "zip-up",
+            "coat",
+            "jacket",
+            "sweater",
+            "oxford",
+            "jeans",
+            "chinos",
+            "sneakers",
+            "boots",
+            "dress-shoes"
+        ],
+        "labor": [
+            "ballcap",
+            "beanie",
+            "cutoff",
+            "t-shirt",
+            "thermal",
+            "zip-up",
+            "jacket",
+            "briefs",
+            "flannel",
+            "hoodie",
+            "jeans",
+            "shorts",
+            "cargo-pants"
+        ]
+    },
     "palettes": {
         "neutral": [
-            "White",
-            "Beige",
-            "Grey",
-            "Black",
-            "Light-Blue"
+            "white",
+            "beige",
+            "grey",
+            "black",
+            "light-blue"
         ],
         "earth-tone": [
-            "Beige",
-            "Light-Blue",
-            "Blue",
-            "Brown",
-            "Green"
+            "beige",
+            "light-blue",
+            "blue",
+            "brown",
+            "green"
         ],
         "pastel": [
-            "White",
-            "Light-Blue",
-            "Grey",
-            "Yellow",
-            "Pink"
+            "white",
+            "light-blue",
+            "grey",
+            "yellow",
+            "pink"
         ],
         "goth": [
-            "Grey",
-            "Black",
-            "Purple",
-            "Red"
+            "grey",
+            "black",
+            "purple",
+            "red"
         ],
         "dark": [
-            "Grey",
-            "Black",
-            "Brown",
-            "Green",
-            "Red"
+            "grey",
+            "black",
+            "brown",
+            "green",
+            "red"
         ],
         "light": [
-            "White",
-            "Light-Blue",
-            "Grey",
-            "Yellow",
-            "Pink",
-            "Orange",
-            "Magenta"
+            "white",
+            "light-blue",
+            "grey",
+            "yellow",
+            "pink",
+            "orange",
+            "magenta"
         ],
         "summer": [
-            "White",
-            "Light-Blue",
-            "Grey",
-            "Yellow",
-            "Pink",
-            "Orange",
-            "Magenta",
-            "Brown",
-            "Green",
-            "Red"
+            "white",
+            "light-blue",
+            "grey",
+            "yellow",
+            "pink",
+            "orange",
+            "magenta",
+            "brown",
+            "green",
+            "red"
         ],
         "winter": [
-            "White",
-            "Beige",
-            "Light-Blue",
-            "Blue",
-            "Dark-Blue",
-            "Brown",
-            "Black",
-            "Purple"
+            "white",
+            "beige",
+            "light-blue",
+            "blue",
+            "dark-blue",
+            "brown",
+            "black",
+            "purple"
         ],
         "spring": [
-            "White",
-            "Light-Blue",
-            "Grey",
-            "Yellow",
-            "Pink",
-            "Beige",
-            "Green",
-            "Red",
-            "Purple",
-            "Green"
+            "white",
+            "light-blue",
+            "grey",
+            "yellow",
+            "pink",
+            "beige",
+            "green",
+            "red",
+            "purple",
+            "green"
         ],
         "fall": []
     },
@@ -136,168 +234,168 @@
         "any"
     ],
     "compatibility": {
-        "White": [
-            "White",
-            "Beige",
-            "Purple",
-            "Red",
-            "Magenta",
-            "Green",
-            "Blue",
-            "Brown",
-            "Orange",
-            "Dark-Blue",
-            "Black"
+        "white": [
+            "white",
+            "beige",
+            "purple",
+            "red",
+            "magenta",
+            "green",
+            "blue",
+            "brown",
+            "orange",
+            "dark-blue",
+            "black"
         ],
-        "Beige": [
-            "Black",
-            "Brown",
-            "Red",
-            "Green",
-            "White",
-            "Light-Blue",
-            "Blue",
-            "Dark-Blue",
-            "Pink",
-            "Magenta",
-            "Purple",
-            "Camouflage"
+        "beige": [
+            "black",
+            "brown",
+            "red",
+            "green",
+            "white",
+            "light-blue",
+            "blue",
+            "dark-blue",
+            "pink",
+            "magenta",
+            "purple",
+            "camouflage"
         ],
-        "Grey": [
-            "Brown",
-            "Green",
-            "Light-Blue",
-            "Red",
-            "Pink",
-            "Yellow",
-            "Orange",
-            "Camouflage"
+        "grey": [
+            "brown",
+            "green",
+            "light-blue",
+            "red",
+            "pink",
+            "yellow",
+            "orange",
+            "camouflage"
         ],
-        "Light-Blue": [
-            "Brown",
-            "Green",
-            "Magenta",
-            "Purple",
-            "Beige",
-            "Grey",
-            "Red"
+        "light-blue": [
+            "brown",
+            "green",
+            "magenta",
+            "purple",
+            "beige",
+            "grey",
+            "red"
         ],
-        "Blue": [
-            "White",
-            "Beige",
-            "Yellow",
-            "Magenta",
-            "Purple",
-            "Green",
-            "Black",
-            "Camouflage"
+        "blue": [
+            "white",
+            "beige",
+            "yellow",
+            "magenta",
+            "purple",
+            "green",
+            "black",
+            "camouflage"
         ],
-        "Dark-Blue": [
-            "White",
-            "Beige",
-            "Yellow",
-            "Magenta",
-            "Green",
-            "Pink",
-            "Red"
+        "dark-blue": [
+            "white",
+            "beige",
+            "yellow",
+            "magenta",
+            "green",
+            "pink",
+            "red"
         ],
-        "Pink": [
-            "Purple",
-            "Beige",
-            "Grey",
-            "Dark-Blue"
+        "pink": [
+            "purple",
+            "beige",
+            "grey",
+            "dark-blue"
         ],
-        "Yellow": [
-            "Black",
-            "Brown",
-            "Grey",
-            "Dark-Blue",
-            "Blue",
-            "Orange",
-            "Green",
-            "Camouflage"
+        "yellow": [
+            "black",
+            "brown",
+            "grey",
+            "dark-blue",
+            "blue",
+            "orange",
+            "green",
+            "camouflage"
         ],
-        "Orange": [
-            "White",
-            "Yellow",
-            "Black",
-            "Green",
-            "Grey",
-            "Camouflage"
+        "orange": [
+            "white",
+            "yellow",
+            "black",
+            "green",
+            "grey",
+            "camouflage"
         ],
-        "Black": [
-            "White",
-            "Beige",
-            "Purple",
-            "Red",
-            "Magenta",
-            "Green",
-            "Blue",
-            "Brown",
-            "Orange",
-            "Yellow",
-            "Camouflage"
+        "black": [
+            "white",
+            "beige",
+            "purple",
+            "red",
+            "magenta",
+            "green",
+            "blue",
+            "brown",
+            "orange",
+            "yellow",
+            "camouflage"
         ],
-        "Brown": [
-            "White",
-            "Beige",
-            "Black",
-            "Red",
-            "Green",
-            "Grey",
-            "Light-Blue",
-            "Yellow",
-            "Magenta",
-            "Purple",
-            "Camouflage"
+        "brown": [
+            "white",
+            "beige",
+            "black",
+            "red",
+            "green",
+            "grey",
+            "light-blue",
+            "yellow",
+            "magenta",
+            "purple",
+            "camouflage"
         ],
-        "Camouflage": [
-            "Black",
-            "Grey",
-            "Blue",
-            "Orange",
-            "Brown",
-            "Yellow",
-            "Beige"
+        "camouflage": [
+            "black",
+            "grey",
+            "blue",
+            "orange",
+            "brown",
+            "yellow",
+            "beige"
         ],
-        "Green": [
-            "White",
-            "Beige",
-            "Light-Blue",
-            "Yellow",
-            "Dark-Blue",
-            "Black",
-            "Grey",
-            "Blue",
-            "Orange",
-            "Brown"
+        "green": [
+            "white",
+            "beige",
+            "light-blue",
+            "yellow",
+            "dark-blue",
+            "black",
+            "grey",
+            "blue",
+            "orange",
+            "brown"
         ],
-        "Red": [
-            "White",
-            "Beige",
-            "Light-Blue",
-            "Dark-Blue",
-            "Black",
-            "Brown",
-            "Grey"
+        "red": [
+            "white",
+            "beige",
+            "light-blue",
+            "dark-blue",
+            "black",
+            "brown",
+            "grey"
         ],
-        "Magenta": [
-            "White",
-            "Beige",
-            "Light-Blue",
-            "Blue",
-            "Dark-Blue",
-            "Black",
-            "Brown"
+        "magenta": [
+            "white",
+            "beige",
+            "light-blue",
+            "blue",
+            "dark-blue",
+            "black",
+            "brown"
         ],
-        "Purple": [
-            "White",
-            "Beige",
-            "Light-Blue",
-            "Pink",
-            "Blue",
-            "Brown",
-            "Black"
+        "purple": [
+            "white",
+            "beige",
+            "light-blue",
+            "pink",
+            "blue",
+            "brown",
+            "black"
         ]
     }
 }
