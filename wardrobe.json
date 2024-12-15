@@ -1451,5 +1451,90 @@
             ]
         }
     ],
-    "outfit_history": []
+    "footwear": [
+        {
+            "article_type": "footwear",
+            "article_subtype": "dress-shoes",
+            "description": "thursday",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "black"
+            ]
+        }
+    ],
+    "outfit_history": [
+        {
+            "headwear": {
+                "article_type": "headwear",
+                "article_subtype": "beanie",
+                "description": "grey carhartt",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "grey"
+                ]
+            },
+            "undershirt": {
+                "article_type": "undershirt",
+                "article_subtype": "tanktop",
+                "description": "cutoff|anime girl cutoff",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "black"
+                ]
+            },
+            "overshirt": {
+                "article_type": "overshirt",
+                "article_subtype": "oxford",
+                "description": "loose button-up",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "white"
+                ]
+            },
+            "outerwear": {
+                "article_type": "outerwear",
+                "article_subtype": "coat",
+                "description": "wool",
+                "weather": "any",
+                "price": 300,
+                "colors": [
+                    "black"
+                ]
+            },
+            "pants": {
+                "article_type": "pants",
+                "article_subtype": "chinos",
+                "description": "'ultimate'",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "black"
+                ]
+            },
+            "accessory": {
+                "article_type": "accessory",
+                "article_subtype": "bag",
+                "description": "leather lv duffle",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "black"
+                ]
+            },
+            "footwear": {
+                "article_type": "footwear",
+                "article_subtype": "dress-shoes",
+                "description": "thursday",
+                "weather": "any",
+                "price": 200,
+                "colors": [
+                    "black"
+                ]
+            }
+        }
+    ]
 }
