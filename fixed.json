@@ -1,44 +1,45 @@
 {
     "article_types": {
-        "Headwear": [
-            "ballcaps",
-            "beanies"
+        "headwear": [
+            "ballcap",
+            "beanie"
         ],
-        "Undershirts": [
-            "cutoffs",
-            "t-shirts",
+        "undershirt": [
+            "cutoff",
+            "t-shirt",
+            "thermal"
+        ],
+        "underpants": [
+            "briefs",
             "thermals"
         ],
-        "Underpants": [
-            ""
-        ],
-        "Overshirts": [
+        "overshirt": [
             "flannel",
-            "hoodies",
-            "sweaters",
-            "oxfords"
+            "hoodie",
+            "sweater",
+            "oxford"
         ],
-        "Outerwear": [],
-        "Pants": [
+        "outerwear": [],
+        "pants": [
             "jeans",
             "chinos",
             "shorts",
             "sweatpants",
-            "cargo pants"
+            "cargo-pants"
         ],
-        "Footwear": [
+        "footwear": [
             "sneakers",
             "boots"
         ],
-        "Accessories": [
-            "rings",
-            "necklaces",
-            "bracelets",
-            "headphones",
-            "masks",
+        "accessory": [
+            "ring",
+            "necklace",
+            "bracelet",
+            "headphone",
+            "mask",
             "gloves",
             "glasses",
-            "bags"
+            "bag"
         ]
     },
     "uses": [
@@ -159,7 +160,8 @@
             "Dark-Blue",
             "Pink",
             "Magenta",
-            "Purple"
+            "Purple",
+            "Camouflage"
         ],
         "Grey": [
             "Brown",
@@ -168,7 +170,8 @@
             "Red",
             "Pink",
             "Yellow",
-            "Orange"
+            "Orange",
+            "Camouflage"
         ],
         "Light-Blue": [
             "Brown",
@@ -186,7 +189,8 @@
             "Magenta",
             "Purple",
             "Green",
-            "Black"
+            "Black",
+            "Camouflage"
         ],
         "Dark-Blue": [
             "White",
@@ -210,14 +214,16 @@
             "Dark-Blue",
             "Blue",
             "Orange",
-            "Green"
+            "Green",
+            "Camouflage"
         ],
         "Orange": [
             "White",
             "Yellow",
             "Black",
             "Green",
-            "Grey"
+            "Grey",
+            "Camouflage"
         ],
         "Black": [
             "White",
@@ -229,7 +235,8 @@
             "Blue",
             "Brown",
             "Orange",
-            "Yellow"
+            "Yellow",
+            "Camouflage"
         ],
         "Brown": [
             "White",
@@ -241,7 +248,17 @@
             "Light-Blue",
             "Yellow",
             "Magenta",
-            "Purple"
+            "Purple",
+            "Camouflage"
+        ],
+        "Camouflage": [
+            "Black",
+            "Grey",
+            "Blue",
+            "Orange",
+            "Brown",
+            "Yellow",
+            "Beige"
         ],
         "Green": [
             "White",

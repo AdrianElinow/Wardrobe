@@ -1,5 +1,5 @@
 
-import json, os, platform, sys, pprint
+import json, os, platform, sys, pprint, random
 from typing import *
 
 DEBUG = False
@@ -11,44 +11,42 @@ class Article():
     def __init__(self,  article_type : str, 
                         subtype: str, 
                         description : str, 
-                        weather : list, 
-                        price : float,
-                        colors : list):
+                        colors : List[str],
+                        weather : List[str], 
+                        price : float):
 
         self.article_type = article_type
-        self.subtype = subtype
+        self.article_subtype = subtype
         self.description = description
         self.weather = weather
         self.price = price
         self.colors = colors
 
-    
     def from_json(json: Dict):
-        return Article( json['article_type'], json['subtype'], json['description'], json['weather'], json['price'], json['colors'])
+        try:
+            return Article( json['article_type'], json['article_subtype'], json['description'], json['colors'], json['weather'], json['price'])
+        except KeyError as ke:
+            print("Error while importing from JSON \n{0}\n\n{1}".format(json, ke))
 
     def summary(self) -> str:
-        return self.description
+        summary = "{2} ({0}:{1}) ${4} | {3} | [{5}]".format(self.article_type, self.article_subtype, self.description, "{0} weather".format(self.weather), self.price, ','.join(self.colors) if self.colors else "")
+
+        return summary
 
     def __str__(self):
         return self.summary()
 
     def jsonify(self):
         return self.__dict__
-        '''
-        return {
-            "Type":self.type,
-            "Subtype":self.subtype,
-            "Description":self.descr,
-            "Weather":self.weather,
-            "Price":self.price,
-            "Colors":self.colors,
-        }
-        '''
 
 class Wardrobe():
     
-    def __init__(self, json):
+    def __init__(self, article_map, json):
         self.data = { article_type:Wardrobe.parse_articles(articles) for article_type, articles in json.items() }
+
+        for article_type in article_map.keys():
+            if article_type not in self.data.keys():
+                self.data[article_type] = []
 
 
     def parse_articles(articles: List[str]) -> List[Article]:
@@ -62,6 +60,13 @@ class Wardrobe():
 
     def add_article(self, article):
         self.data[article.article_type].append(article)
+        return article
+
+    def remove_article(self, article):
+        if article in self.data[article.article_type]:
+            self.data[article.article_type].remove(article)
+        else:
+            print("Article not found in '{0}'".format(article_type))
 
     def list_by_type(self, article_type: str) -> List:
 
@@ -71,15 +76,18 @@ class Wardrobe():
         return []
 
 
-    def list_by(self, article_type: str =None, article_subtype: str =None) -> List:
+    def list_by(self, article_type: str ="", article_subtype: str ="", description:str ="", colors: List[str] =[], temp: str ="", price: int =0) -> List:
         
         if article_type and article_type in self.data.keys():
             if article_subtype:
-                return [ article for article in self.data[article_type] if article.subtype == article_subtype ] 
+                return [ article for article in self.data[article_type] if article.article_subtype == article_subtype ] 
 
             return self.data[article_type]
 
         return []
+
+    def list_by_type(self, article_type: str):
+        return self.data[article_type]
 
     def dump(self) -> Dict:
         dump = {}
@@ -93,13 +101,19 @@ class Wardrobe():
         
 class WardrobeGenerator():
 
-    def __init__(self, fixed_data_filename, wardrobe_data_filename=""):
+    def __init__(self, fixed_data_filename, wardrobe_data_filename="", is_cli=False):
         self.load_fixed_data(fixed_data_filename)
+        self.is_cli = is_cli
 
-        self.wardrobe = Wardrobe(self.load_wardrobe_data(wardrobe_data_filename))
+        self.wardrobe = Wardrobe(self.article_map, self.load_wardrobe_data(wardrobe_data_filename))
+        self.filepath = wardrobe_data_filename
 
-    def save(self, save_filepath ):
-        print("saving wardrobe as {0}".format(save_filepath))
+    def save(self, save_filepath=None ):
+        if not save_filepath:
+            save_filepath = self.filepath
+
+        if not self.is_cli:
+            print("saving changes to {0}".format(save_filepath))
 
         with open(save_filepath,'w') as f:
             f.write( json.dumps(self.wardrobe.dump(), indent=4) )
@@ -109,8 +123,8 @@ class WardrobeGenerator():
             fixed_data = json.load( open(fixed_data_filename) )
             
             self.fixed_data = WardrobeGenerator.enforce_consistency( fixed_data )
-            self.color_map = self.fixed_data['palettes']
-            self.color_compatibility = self.fixed_data['compatibility']
+            self.palettes = self.fixed_data['palettes']
+            self.color_map = self.fixed_data['compatibility']
             self.article_map = self.fixed_data['article_types']
             self.weather = self.fixed_data['weather']
 
@@ -123,11 +137,20 @@ class WardrobeGenerator():
 
     def load_wardrobe_data(self, wardrobe_data_filename: str) -> str:
         cwd = os.getcwd()
+        fp = "{0}/{1}".format(cwd, wardrobe_data_filename)
         
+        if self.is_cli and os.path.exists(fp):
+            try:
+                return json.load(open(wardrobe_data_filename))
+            except:
+                print("Failed to load data from {0}".format(wardrobe_data_filename))
+                wardrobe_data_filename = "---"
+
+
         while True:
             fp = "{0}/{1}".format(cwd, wardrobe_data_filename)
             if os.path.exists(fp):
-                entry = robust_str_entry("Wardrobe data file detected [{0}] | Use this file?\n\t>".format(fp), ['yes','no'])
+                entry = robust_str_entry("Wardrobe data file detected [{0}] | Use this file?\n\t>".format(fp), ['no','yes'])
                 if entry == 'no':
                     wardrobe_data_filename = "---"
                     continue
@@ -139,6 +162,7 @@ class WardrobeGenerator():
                 except:
                     print("Failed to load data from {0}".format(wardrobe_data_filename))
                     wardrobe_data_filename = "---"
+
 
     def enforce_consistency( fixed_data ):
 
@@ -154,6 +178,7 @@ class WardrobeGenerator():
         output.close()
         return fixed_data
 
+
     def handle_add(self):
         article_type = robust_str_entry("Article type: >", list(fixed_data['classifications'].keys()))
         article_subtype = robust_str_entry("Article subtype: >",fixed_data['classifications'][article_type])
@@ -161,14 +186,14 @@ class WardrobeGenerator():
         existing = wardrobe.list_by(article_type, article_subtype)
         if existing:
             print("Existing {0}:{1}".format(article_type, article_subtype))        
-            for item in existing:
-                print('- {0}'.format(item))
+            display_articles(existing)
 
         article = create_article(fixed_data, article_type, article_subtype)
         self.wardrobe.add_article(article)
 
+
     def handle_add_cli(self, args):
-        print('handle_add_cli({0})'.format(','.join(args)))
+        debug('handle_add_cli({0})'.format(','.join(args)))
         
         if len(args) == 0:
             print('Add Help -> ',
@@ -181,18 +206,75 @@ class WardrobeGenerator():
                 .format( args[0], ','.join(self.article_map[args[0]]), ','.join(self.weather)))
 
         else:
-            article_type, article_subtype, description, color, temp, price = self.parse_article_cli_args(args)
-            self.wardrobe.add_article(Article(article_type, article_subtype, description, color, temp, price))
+            article_type, article_subtype, description, colors, temp, price = self.parse_article_cli_args(args)
+            article = self.wardrobe.add_article(Article(article_type, article_subtype, description, colors, temp, price))
+
 
     def handle_delete(self):
         print('Not yet implemented')
 
     def handle_delete_cli(self, args):
-        print('handle_delete_cli({0})'.format(','.join(args)))
-        print('Not yet implemented')
+        debug('handle_delete_cli({0})'.format(','.join(args)))
+
+        if len(args) == 0:
+            print('Delete Help -> ',
+                '[type:{{{0}}}] [subtype:{{{1}}}] [description:str] [color:str] [temperature:<{2}>] [price:<$#>]'
+                .format( ','.join(self.article_map.keys()), "depends on type", ','.join(self.weather)))
+        
+        elif len(args) == 1:
+            print('Delete Help -> ',
+                '[type:{{{0}}}] [subtype:{{{1}}}] [description:str] [color:str] [temperature:<{2}>] [price:<$#>]'
+                .format( args[0], ','.join(self.article_map[args[0]]), ','.join(self.weather)))
+
+        else:
+            article_type, article_subtype, description, colors, temp, price = self.parse_article_cli_args(args)
+
+            items = self.wardrobe.list_by(article_type, article_subtype, description, colors, temp, price)
+
+            if not items:
+                print("No items found")
+
+            else:
+                for article in items:
+                    debug("\t{0}".format(article.summary()))
+
+                if len(items) > 1:
+                    print("{0} items selected:".format(len(items)))
+                    display_articles(articles)
+                else:
+                    self.wardrobe.remove_article(items[0])
+
 
     def handle_nav(self):
         print('Not yet implemented')
+
+    def handle_list_cli(self, args):
+        debug('handle_add_cli({0})'.format(','.join(args)))
+
+        if len(args) == 0:
+            print('List Help -> ',
+                '[type:{{{0}}}] [subtype:{{{1}}}] [color:str] [temperature:<{2}>] [price:<$#>]'
+                .format( ','.join(self.article_map.keys()), "depends on type", ','.join(self.weather)))
+        
+        if len(args) == 1 and args[0] == 'All':
+            for article_type in self.article_map.keys():
+                
+                articles = self.wardrobe.list_by_type(article_type)
+                
+                if articles:
+                    display_articles(articles, article_type)
+
+
+        else:
+            article_type, article_subtype, description, colors, temp, price = self.parse_article_cli_args(args)
+            articles = self.wardrobe.list_by(article_type, article_subtype, description, colors, temp, price)
+
+            if not articles:
+                print("No items")
+
+            for article in articles:
+                print(article.summary())
+
 
     def handle_search(self):
         #["Type","Subtype","Description","Weather","Price","Colors","Palettes","Uses"]
@@ -207,8 +289,7 @@ class WardrobeGenerator():
         data = wardrobe.list_by_type(criteria)
 
         if data:
-            for article in data:
-                print('- ',article)
+            display_articles(data)
         else:
             print('No data to display')
 
@@ -216,19 +297,28 @@ class WardrobeGenerator():
         print('handle_search_cli({0})'.format(','.join(args)))
         print('Not yet implemented')
 
-
     def handle_create_outfit(self):
         print('Not yet implemented')
 
-    def handle_generate_cli(self):
-        print('handle_generate_cli({0})'.format(','.join(args)))
-        print('Not yet implemented')
+    def handle_generate_cli(self, args):
+        debug('handle_generate_cli({0})'.format(','.join(args)))
+
+        print('Generating Randomized Outfit\n')
+
+        for availabe_type in self.wardrobe.data.keys():
+            available_articles = self.wardrobe.list_by(availabe_type)
+
+            if(available_articles):
+                random_article = random.choice(self.wardrobe.list_by(availabe_type))
+                print("{0} | {1}".format(availabe_type, random_article))
 
     def parse_article_cli_args(self, args):
 
-        article_type, article_subtype, description, color, temp, price = ""
+        article_type, article_subtype, description, colors, temp, price = "","","",[],"",0
 
         for arg in args:
+            arg = arg.strip().lower()
+
             # article type
             if arg in self.article_map.keys():
                 article_type = arg
@@ -238,7 +328,7 @@ class WardrobeGenerator():
                 article_subtype = arg
 
             elif arg in self.color_map.keys():
-                color = arg
+                colors.append(arg)
 
             elif arg in ['hot','cold','normal','all','wet']:
                 temp = arg
@@ -250,10 +340,11 @@ class WardrobeGenerator():
                     pass
 
             else:
-                description += " |",arg
+                if description:
+                    description += "|"
+                description += arg
 
-        return article_type, article_subtype, description, color, temp, price
-
+        return article_type, article_subtype, description, colors, temp, price
 
     def menu(self):
 
@@ -268,7 +359,7 @@ class WardrobeGenerator():
 
         while True:
             try:
-                opt = robust_str_entry('> ', list(menu_nav.keys()))
+                opt = robust_str_entry('> ', list(menu_nav.keys())).lower()
 
                 if opt == 'exit':
                     break
@@ -289,20 +380,31 @@ class WardrobeGenerator():
 
         cli_nav = {
             'add':self.handle_add_cli,
+            'list':self.handle_list_cli,
             'delete':self.handle_delete_cli,
             'search':self.handle_search_cli,
             'generate':self.handle_generate_cli
         }
 
+        print('')
         cli_nav[args[1]](args[2:])
+        print('')
 
-
+        self.save()
 
 
 def debug(*msgs):
     if DEBUG:
         print('[DEBUG]',msgs);
 
+
+
+def display_articles(articles: List[Article], msg: str=""):
+    if msg:
+        print(msg)
+
+    for article in articles:
+        print("\t{0}".format(article.summary()))
 
 
 def robust_str_entry(prompt, options=[]):
@@ -382,8 +484,7 @@ def create_article(fixed_data, article_type=None, article_subtype=None):
     price = int(robust_str_entry('Price ($) > '))
     color = robust_str_entry('Color(s) > ', list(fixed_data['compatibility'].keys()))
 
-    return Article(article_type, article_subtype, descr, temp, price, color)
-
+    return Article(article_type, article_subtype, descr, colors, temp, price)
 
 def clear_screen():
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", end="")
@@ -399,13 +500,13 @@ def main():
 def is_cli_transaction( args: List[str] ) -> bool:
     
     if len(args) > 1:
-        return args[1] in ['add','delete','update','search','generate']
+        return args[1] in ['add','list','delete','update','search','generate']
 
     return False
 
 def handle_cli_transaction( args: List[str] ):
 
-    WG = WardrobeGenerator('fixed.json','wardrobe.json')
+    WG = WardrobeGenerator('fixed.json','wardrobe.json', True)
 
     WG.handle_cli_transaction(args)
 
