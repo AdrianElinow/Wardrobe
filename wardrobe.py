@@ -3,6 +3,7 @@ import json, os, platform, sys, pprint, random
 from typing import *
 
 DEBUG = False
+PRETTY = False
 
 
 class Article():
@@ -644,8 +645,7 @@ class WardrobeGenerator():
             except KeyboardInterrupt as ki:
                 break
 
-        pretty = True
-        self.save('wardrobe.json', pretty)
+        self.save('wardrobe.json', PRETTY)
 
     def help_cli(*args):
         print(f""" ### Wardrobe Generator CLI ### \n\t### usages ###\n{'\n'.join(WardrobeGenerator.cli_modes)}""")
@@ -677,8 +677,7 @@ class WardrobeGenerator():
         '''
         print('')
 
-        pretty = True
-        self.save(pretty=pretty)
+        self.save(pretty=PRETTY)
 
 
 
