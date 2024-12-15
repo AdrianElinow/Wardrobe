@@ -5,9 +5,10 @@
             "beanie"
         ],
         "undershirt": [
-            "cutoff",
+            "tanktop",
             "t-shirt",
-            "thermal"
+            "thermal",
+            "longsleeve"
         ],
         "underpants": [
             "briefs",
@@ -39,13 +40,15 @@
         ],
         "accessory": [
             "ring",
+            "belt",
             "necklace",
             "bracelet",
-            "headphone",
+            "headphones",
             "mask",
             "gloves",
             "glasses",
-            "bag"
+            "bag",
+            "watch"
         ]
     },
     "uses": {
@@ -150,14 +153,17 @@
     "palettes": {
         "neutral": [
             "white",
+            "silver",
             "beige",
             "grey",
             "black",
+            "light-grey",
             "light-blue"
         ],
         "earth-tone": [
             "beige",
             "light-blue",
+            "burgundy",
             "blue",
             "brown",
             "green"
@@ -166,24 +172,29 @@
             "white",
             "light-blue",
             "grey",
+            "light-grey",
             "yellow",
             "pink"
         ],
         "goth": [
             "grey",
             "black",
+            "light-grey",
             "purple",
             "red"
         ],
         "dark": [
             "grey",
+            "light-grey",
             "black",
             "brown",
             "green",
-            "red"
+            "red",
+            "burgundy"
         ],
         "light": [
             "white",
+            "light-grey",
             "light-blue",
             "grey",
             "yellow",
@@ -193,6 +204,7 @@
         ],
         "summer": [
             "white",
+            "light-grey",
             "light-blue",
             "grey",
             "yellow",
@@ -205,9 +217,11 @@
         ],
         "winter": [
             "white",
+            "light-grey",
             "beige",
             "light-blue",
             "blue",
+            "red",
             "dark-blue",
             "brown",
             "black",
@@ -215,6 +229,7 @@
         ],
         "spring": [
             "white",
+            "light-grey",
             "light-blue",
             "grey",
             "yellow",
@@ -225,7 +240,20 @@
             "purple",
             "green"
         ],
-        "fall": []
+        "fall": [
+            "white",
+            "light-grey",
+            "beige",
+            "blue",
+            "red",
+            "dark-blue",
+            "brown",
+            "green",
+            "burgundy",
+            "brown",
+            "black",
+            "purple"
+        ]
     },
     "weather": [
         "hot",
@@ -245,7 +273,10 @@
             "brown",
             "orange",
             "dark-blue",
-            "black"
+            "black",
+            "burgundy",
+            "silver",
+            "light-grey"
         ],
         "beige": [
             "black",
@@ -259,7 +290,20 @@
             "pink",
             "magenta",
             "purple",
-            "camouflage"
+            "camouflage",
+            "burgundy",
+            "silver",
+            "light-grey"
+        ],
+        "silver": [
+            "white",
+            "black",
+            "grey",
+            "beige",
+            "burgundy",
+            "light-blue",
+            "blue",
+            "light-grey"
         ],
         "grey": [
             "brown",
@@ -269,7 +313,23 @@
             "pink",
             "yellow",
             "orange",
-            "camouflage"
+            "camouflage",
+            "burgundy",
+            "silver",
+            "light-grey"
+        ],
+        "light-grey": [
+            "white",
+            "black",
+            "grey",
+            "beige",
+            "yellow",
+            "orange",
+            "burgundy",
+            "light-blue",
+            "blue",
+            "brown",
+            "silver"
         ],
         "light-blue": [
             "brown",
@@ -278,7 +338,9 @@
             "purple",
             "beige",
             "grey",
-            "red"
+            "red",
+            "silver",
+            "light-grey"
         ],
         "blue": [
             "white",
@@ -288,7 +350,10 @@
             "purple",
             "green",
             "black",
-            "camouflage"
+            "camouflage",
+            "burgundy",
+            "silver",
+            "light-grey"
         ],
         "dark-blue": [
             "white",
@@ -297,7 +362,8 @@
             "magenta",
             "green",
             "pink",
-            "red"
+            "red",
+            "burgundy"
         ],
         "pink": [
             "purple",
@@ -313,7 +379,8 @@
             "blue",
             "orange",
             "green",
-            "camouflage"
+            "camouflage",
+            "light-grey"
         ],
         "orange": [
             "white",
@@ -321,7 +388,8 @@
             "black",
             "green",
             "grey",
-            "camouflage"
+            "camouflage",
+            "light-grey"
         ],
         "black": [
             "white",
@@ -334,7 +402,10 @@
             "brown",
             "orange",
             "yellow",
-            "camouflage"
+            "camouflage",
+            "burgundy",
+            "silver",
+            "light-grey"
         ],
         "brown": [
             "white",
@@ -347,7 +418,9 @@
             "yellow",
             "magenta",
             "purple",
-            "camouflage"
+            "camouflage",
+            "burgundy",
+            "light-grey"
         ],
         "camouflage": [
             "black",
@@ -378,6 +451,18 @@
             "black",
             "brown",
             "grey"
+        ],
+        "burgundy": [
+            "white",
+            "blue",
+            "dark-blue",
+            "brown",
+            "beige",
+            "black",
+            "brown",
+            "grey",
+            "silver",
+            "light-grey"
         ],
         "magenta": [
             "white",

@@ -1,0 +1,180 @@
+{
+    "overshirts": [
+        {
+            "article_type": "Overshirt",
+            "article_subtype": "sweatshirt",
+            "description": "Grey Plain Crewneck Sweatshirt",
+            "weather": [
+                "cold",
+                "normal"
+            ],
+            "price": 40,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "Overshirt",
+            "article_subtype": "hoodie",
+            "description": "Tan Weiler's hoodie",
+            "weather": [
+                "cold"
+            ],
+            "price": 0,
+            "colors": [
+                "beige"
+            ]
+        }
+    ],
+    "pants": [
+        {
+            "article_type": "Pants",
+            "article_subtype": "jeans",
+            "description": "Blue Jeans",
+            "weather": [
+                "cold",
+                "normal"
+            ],
+            "price": 70,
+            "colors": [
+                "blue"
+            ]
+        },
+        {
+            "article_type": "Pants",
+            "article_subtype": "sweatpants",
+            "description": "Black/White Adidas Trackpants",
+            "weather": [
+                "normal"
+            ],
+            "price": 40,
+            "colors": [
+                "black",
+                "white"
+            ]
+        },
+        {
+            "article_type": "Pants",
+            "article_subtype": "sweatpants",
+            "description": "White Adidas Trackpants",
+            "weather": [
+                "normal"
+            ],
+            "price": 40,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "Pants",
+            "article_subtype": "sweatpants",
+            "description": "Thick Black Sweatpants",
+            "weather": [
+                "normal",
+                "cold"
+            ],
+            "price": 30,
+            "colors": [
+                "black"
+            ]
+        }
+    ],
+    "footwear": [
+        {
+            "article_type": "Footwear",
+            "article_subtype": "boots",
+            "description": "Red Wing Moc-Toes",
+            "weather": [
+                "all"
+            ],
+            "price": 300,
+            "colors": [
+                "brown"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "article_subtype": "boots",
+            "description": "Thursday Captain's (brandy)",
+            "weather": [
+                "all"
+            ],
+            "price": 200,
+            "colors": [
+                "brown"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "article_subtype": "boots",
+            "description": "Black Thursday Zip-Ups",
+            "weather": [
+                "all"
+            ],
+            "price": 200,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "article_subtype": "boots",
+            "description": "Thursday Rogue's (taupe)",
+            "weather": [
+                "all"
+            ],
+            "price": 200,
+            "colors": [
+                "beige"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "article_subtype": "boots",
+            "description": "Thorougood Black 8\" Moc-Toe Boots",
+            "weather": [
+                "all"
+            ],
+            "price": 250,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "article_subtype": "boots",
+            "description": "Timberland's",
+            "weather": [
+                "all"
+            ],
+            "price": 100,
+            "colors": [
+                "beige"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "article_subtype": "sneakers",
+            "description": "Air Force 1's",
+            "weather": [
+                "all"
+            ],
+            "price": 150,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "Footwear",
+            "article_subtype": "sneakers",
+            "description": "White Chucks",
+            "weather": [
+                "all"
+            ],
+            "price": 80,
+            "colors": [
+                "white"
+            ]
+        }
+    ]
+}

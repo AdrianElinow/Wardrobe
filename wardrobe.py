@@ -29,7 +29,7 @@ class Article():
             print("Error while importing from JSON \n{0}\n\n{1}".format(json, ke))
 
     def summary(self) -> str:
-        summary = "{2} ({0}:{1}) ${4} | {3} | [{5}]".format(self.article_type, self.article_subtype, self.description, "{0} weather".format(self.weather), self.price, ','.join(self.colors) if self.colors else "")
+        summary = "{5} {2} {1} (${4}|{0}|{3})".format(self.article_type, self.article_subtype, self.description, "{0} weather".format(self.weather), self.price, ','.join(self.colors) if self.colors else "")
 
         return summary
 
@@ -199,7 +199,7 @@ class WardrobeGenerator():
             for comp in compatibles:
                 #debug(color, compatibles, '\n\t',comp, fixed_data['compatibility'][comp])
                 if color not in fixed_data['compatibility'][comp]:
-                    print("Fixing Discrepancy: ", comp,"E",color,"|",color,"/E",comp)
+                    print("Fixing Discrepancy: ", comp,":",color,"|",color,":",comp)
                     fixed_data['compatibility'][comp].append(color)
 
         output = open('fixed.json','w')
@@ -402,6 +402,61 @@ class WardrobeGenerator():
                                     random_article = random.choice(articles_for_use)
                                     print("{0} | {1}".format(availabe_type, random_article))
 
+    def handle_import_cli(self, args):
+        debug('handle_generate_cli({0})'.format(','.join(args)))
+
+        if len(args) == 0:
+            print('Import Help:'+
+                '\n\tFilename: str')
+
+        else:
+            wardrobe_data_filename = args[0]
+
+            cwd = os.getcwd()
+            fp = "{0}/{1}".format(cwd, wardrobe_data_filename)
+
+            if os.path.exists(fp):
+
+                import_data = open(fp).readlines()
+
+                for line in import_data:
+                    line = line.strip()
+
+                    if line == "" or line.startswith('#'):
+                        continue
+
+                    multipart_token = ""
+                    tokens = []
+                    for t in line.split(' '):
+
+                        if t.startswith('"') and t.endswith('"'):
+                            tokens.append(t.replace('"',''))
+                            continue
+                        elif t.startswith('"'):
+                            t = t.replace('"','')
+                        elif t.endswith('"'):
+                            multipart_token += t.replace('"','')
+                            tokens.append(multipart_token)
+                            multipart_token = ""
+                            continue
+                        elif multipart_token == '':
+                            tokens.append(t)
+                            continue
+
+                        multipart_token += "{0} ".format(t)
+
+                    article_type, article_subtype, description, colors, temp, price = self.parse_article_cli_args(tokens)
+
+                    new_article = Article(article_type, article_subtype, description, colors, temp, price)
+
+                    print('Importing new article: ', new_article)
+
+                    self.wardrobe.add_article( new_article )
+
+
+            else:
+                "No file found at [{0}]".format(fp)
+            
 
 
 
@@ -423,7 +478,7 @@ class WardrobeGenerator():
             elif arg in self.color_map.keys():
                 colors.append(arg)
 
-            elif arg in ['hot','cold','normal','all','wet']:
+            elif arg in ['hot','cold','normal','all','wet','any']:
                 temp = arg
 
             elif '$' in arg:
@@ -476,7 +531,8 @@ class WardrobeGenerator():
             'list':self.handle_list_cli,
             'delete':self.handle_delete_cli,
             'search':self.handle_search_cli,
-            'generate':self.handle_generate_cli
+            'generate':self.handle_generate_cli,
+            'import':self.handle_import_cli
         }
 
         print('')
@@ -593,7 +649,7 @@ def main():
 def is_cli_transaction( args: List[str] ) -> bool:
     
     if len(args) > 1:
-        return args[1] in ['add','list','delete','update','search','generate']
+        return args[1] in ['add','list','delete','update','search','generate','import']
 
     return False
 

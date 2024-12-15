@@ -1,6 +1,268 @@
 
 
 hats
+    carhart beanie
+    black beanie
+
+    camo hat
+    black goth maga hat
+    grey "web designer" hat
+    black aegis hat
+    Grey cthulhu hat
+
+undershirt
+
+    tshirt
+        grey oversized nazghul t
+        plain white tight shirt
+        plain grey t
+        plain black FOTL t 2
+        plain burgundy t
+        plain black arizona v-neck t
+
+        black whitephos pink/sakura
+        black cthulhu graphic
+        black lovedrafts t
+        black wendigo t
+        black first-knife-fight t
+        black grunt-style t
+        light-blue Ghost-in-the-shell t
+        loose plain white t
+        tight burgundy BPRE t
+        black whitephos/FM Goth-Girls t
+
+
+    cutoff
+        2a tanktop
+        cthulhu tanktop
+        anime tiddies cutoff
+        black tanktop
+        grey pocket cutoff
+
+    longsleeve
+        black yuengling
+        black turtleneck
+
+    thermal
+        devops compression shirt
+        devops compression shirt
+
+        black waffle
+        blue waffle
+        burgundy waffle
+
+
+overshirt
+    flannel
+        burgundy
+        blue denim
+        green
+        light-grey
+        red flannel
+        red-flannel
+
+        grey mechanic button-down
+    
+    hoodie
+        black white-phosphor hoodie
+        grey MIT hoodie
+        burgundy weilers hoodie
+        black amira elfeky hoodie
+        black patchwork eyes hoodie
+        red AnyMeansNecessary hoodie
+        white "Not Today" hoodie
+        black "Rooftop votor" hoodie
+        black white-phos/FM David hoodie
+        grey sweater/hoodie
+        black MementoMori hoodie
+        beige weilers hoodie
+        green ODST hoodie
+
+    sweater
+        blue turtleneck
+        black longsleeve stitch 
+        red 
+        beige cable-knit
+        hounds-tooth turtleneck
+        blue
+        grey turtleneck
+        white quarter-zip
+
+    oxford
+        blue 
+        dark-blue dotted 
+        black red-lined 
+        black dotted
+        white dark-blue-lined
+        red
+        grey 
+        white SL
+        white loose
+        white light-blue-lined
+
+    zip-up
+        black adidas track jacket
+        grey fleece
+
+outerwear
+    black leather thursday jacket
+    blue denim sherpa jacket
+    grey longcoat
+    brown leather AF Sherpa jacket
+    black wool longcoat
+
+pants
+    jeans
+        blue levis denizens
+        blue sun co jeans
+        black viktos jeans
+        black wide-leg jeans
+        black boohooman skinny jeans
+        light-blue boohooman skinny jeans
+        dark blue skinny jeans
+        dark blue skinny jeans
+    chinos
+        black chinos
+        black chinos
+        light-grey chinos
+        grey chinos
+        beige chinos
+        beige chinos
+
+    shorts
+        blue chino shorts
+
+        black youngla shorts
+        orange gymreapers shorts
+        black shorts
+        black short-shorts 
+
+    sweatpants
+        black adidas track pants
+        black/white adidas track pants
+        black/white loose adidas track pants
+        white adidas track pants
+        black skinny joggers
+        grey skinny joggers
+
+
+    cargo-pants
+
+
+footwear
+    black Thursday combat boots
+    black thoroughgood moc-toes
+    brown thursday boots
+    brown Timbs
+    black converse sneakers
+    brown Merrel hiking boots
+    Beige Thursday riding boots
+    brown RedWing moc-toes
+    black thursday dress shoes
+    black plush moc-toe slippers
+
+
+Accessories:
+    black leather gloves
+    blue scarf
+
+    crossbody-bag
+    backpack
+    black leather ccw bag
+    black/grey LV sling bag
+    black/grey LV satchel bag
+    black LV duffle
+
+    black CrypticNine mask
+
+    Black sony headphones
+
+    brown leather belt
+    grey leather belt
+    black ccw belt
+    grey fabric belt
+
+    black fossil watch
+
+    silver chrone-hearts bracelet
+    grey comte spike bracelet
+    silver hoop&chain bracelet
+
+    silver chrome-hearts necklace
+    silver chain necklace
+    silver HanlonsRazor necklace
+    silver personal fears raptor chain necklace
+
+    grey comte statement ring
+    silver personal fears ribcage ring
+    silver personal fears twin-skull ring
+    silver hepta-honeycomb ring
+    silver chasm ring
+    silver promises ring
+    silver personal fears sludge ring
+    grey blacksmith ring
+    grey/silver scored ring
+    black pinky ring
+    grey silicone ring
+
+
+
+"ring",
+"belt",
+"necklace",
+"bracelet",
+"headphones",
+"mask",
+"gloves",
+"glasses",
+"bag"
+
+
+
+
+saved outfits: 
+    S&L suit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 undershirts
     cutoffs
         tie-die x2
@@ -82,11 +344,12 @@ outerwear
     denim jacket
     white bomber
     flecktarn
-    leather jacket
+    black leather jacket
+    brown leather sherpa AF jacket
+    black wool overcoat
     grey coat
     tigerstripe coat
     grey fleece
-    red fleece
 pants
     sweatpants
         black/white adidas
