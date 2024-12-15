@@ -187,7 +187,7 @@ class Wardrobe():
 
 class WardrobeGenerator():
 
-    cli_modes = ['add','list','delete','generate','import','history','help']
+    cli_modes = ['add','list','delete','generate','import','history','help','last']
 
     def __init__(self, fixed_data_filename, wardrobe_data_filename="", is_cli=False):
         self.load_fixed_data(fixed_data_filename)
@@ -352,7 +352,7 @@ class WardrobeGenerator():
         debug('handle_list_cli({0})'.format(','.join(args)))
 
         if len(args) == 0:
-            print('List Help -> ',
+            print('List Help -> \n\t"all" : shows all items in wardrobe\n',
                 '\n\t[type:{{{0}}}]\n\t[subtype:{{{1}}}]\n\t[color:str]\n\t[temperature:<{2}>]\n\t[price:<$#>]'
                 .format( ','.join(self.article_map.keys()), "depends on type", ','.join(self.weather)))
         
@@ -500,6 +500,9 @@ class WardrobeGenerator():
             self.wardrobe.add_outfit(fit)
             return fit
 
+    def handle_last_cli(self, args):
+        debug('handle_last_cli({0})'.format(','.join(args)))
+        print("Not yet implemented")
 
     def handle_history_cli(self, args):
         debug('handle_history_cli({0})'.format(','.join(args)))
@@ -655,7 +658,8 @@ class WardrobeGenerator():
             'generate':self.handle_generate_cli,
             'import':self.handle_import_cli,
             'history':self.handle_history_cli,
-            'help':WardrobeGenerator.help_cli
+            'help':WardrobeGenerator.help_cli,
+            'last':self.handle_last_cli
         }
 
         print('')
