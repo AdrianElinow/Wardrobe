@@ -5,7 +5,6 @@ from typing import *
 DEBUG = False
 
 
-
 class Article():
 
     def __init__(self,  article_type : str, 
@@ -26,11 +25,13 @@ class Article():
         try:
             return Article( json['article_type'], json['article_subtype'], json['description'], json['colors'], json['weather'], json['price'])
         except KeyError as ke:
-            print("Error while importing from JSON \n{0}\n\n{1}".format(json, ke))
+            print("Error while importing from JSON \n{0}\n".format(json))
+            print(ke)
 
     def summary(self) -> str:
-        summary = "{5} {2} {1} (${4}|{0}|{3})".format(self.article_type, self.article_subtype, self.description, "{0} weather".format(self.weather), self.price, ','.join(self.colors) if self.colors else "")
-
+        main_line = "{0} {1} {2}".format((','.join(self.colors) if self.colors else "").capitalize(), self.description.capitalize(), self.article_subtype.capitalize(), )
+        summary = "{0:55}|(${3}|{1}|{2})".format(main_line, self.article_type, "{0} weather".format(self.weather), self.price)
+        
         return summary
 
     def __str__(self):
@@ -39,15 +40,58 @@ class Article():
     def jsonify(self):
         return self.__dict__
 
+class Outfit():
+
+    def __init__(self, article_map, articles: List[Article]):
+        if not articles:
+            raise IndexError("'articles' cannot be empty")
+
+        self.articles = { article_type:None for article_type in article_map.keys() }
+
+        for article in articles:
+            if article:
+                self.articles[article.article_type] = article
+
+    def from_json(article_map, json: List[Dict]):
+        print('from_json',json)
+
+        return Outfit( article_map, [ Article.from_json(article) for article in json] )
+
+    def dump(self):
+        return { article_type:article.jsonify() for article_type, article in self.articles.items() if article }
+
+    def __str__(self):
+
+        summary = "Outfit"
+
+        for article_type, article in self.articles.items():
+            if article:
+                summary += "\n{0:10}|{1}".format(article_type, article)
+
+        return summary
+
+
+
 class Wardrobe():
     
     def __init__(self, article_map, json):
         self.data = { article_type:Wardrobe.parse_articles(articles) for article_type, articles in json.items() }
+        self.outfit_history = []
+
+        if 'outfit_history' in json.keys() and json['outfit_history'] != []:
+            print('loading outfit history')
+            self.outfit_history.append(Outfit.from_json(article_map, json['outfit_history']))
 
         for article_type in article_map.keys():
             if article_type not in self.data.keys():
                 self.data[article_type] = []
 
+
+    def add_outfit(self, outfit: Outfit):
+        if self.outfit_history:
+            self.outfit_history.append(outfit)
+        else:
+            self.outfit_history = [outfit]
 
     def parse_articles(articles: List[str]) -> List[Article]:
         if not articles:
@@ -112,7 +156,7 @@ class Wardrobe():
     def list_by_weather(self, article_type: str, weather: str) -> List[Article]:
         articles = self.list_by_type(article_type)
 
-        selected_articles = [article for article in articles if weather in article.weather]
+        selected_articles = [article for article in articles if (weather in article.weather or 'any' in article.weather) ]
 
         return selected_articles
 
@@ -123,10 +167,13 @@ class Wardrobe():
         for article_type, articles in self.data.items():
             if not articles:
                 continue
-            dump[article_type] = [ article.jsonify() for article in articles ]
+            dump[article_type] = [ article.jsonify() for article in articles if article ]
         
+        dump['outfit_history'] = [ outfit.dump() for outfit in self.outfit_history if outfit ]
+
         return dump
         
+
 class WardrobeGenerator():
 
     def __init__(self, fixed_data_filename, wardrobe_data_filename="", is_cli=False):
@@ -136,7 +183,7 @@ class WardrobeGenerator():
         self.wardrobe = Wardrobe(self.article_map, self.load_wardrobe_data(wardrobe_data_filename))
         self.filepath = wardrobe_data_filename
 
-    def save(self, save_filepath=None ):
+    def save(self, save_filepath=None, pretty=True ):
         if not save_filepath:
             save_filepath = self.filepath
 
@@ -144,7 +191,10 @@ class WardrobeGenerator():
             print("saving changes to {0}".format(save_filepath))
 
         with open(save_filepath,'w') as f:
-            f.write( json.dumps(self.wardrobe.dump(), indent=4) )
+            if pretty:
+                f.write( json.dumps(self.wardrobe.dump(), indent=4))
+            else:
+                f.write(json.dumps(self.wardrobe.dump()))
     
     def load_fixed_data(self, fixed_data_filename):
         try:
@@ -167,10 +217,13 @@ class WardrobeGenerator():
     def load_wardrobe_data(self, wardrobe_data_filename: str) -> str:
         cwd = os.getcwd()
         fp = "{0}/{1}".format(cwd, wardrobe_data_filename)
+        data = None
         
         if self.is_cli and os.path.exists(fp):
             try:
-                return json.load(open(wardrobe_data_filename))
+                with open(wardrobe_data_filename) as wardrobe_data:
+                    data = json.load(open(wardrobe_data_filename))
+                return data
             except:
                 print("Failed to load data from {0}".format(wardrobe_data_filename))
                 wardrobe_data_filename = "---"
@@ -187,7 +240,9 @@ class WardrobeGenerator():
                 wardrobe_data_filename = robust_str_entry("No wardrobe file found [{0}] | Enter filename\n\t>".format(fp))
             if os.path.exists(fp):
                 try:
-                    return json.load(open(wardrobe_data_filename))
+                    with open(wardrobe_data_filename) as wardrobe_data:
+                        data = json.load(open(wardrobe_data_filename))
+                    return data
                 except:
                     print("Failed to load data from {0}".format(wardrobe_data_filename))
                     wardrobe_data_filename = "---"
@@ -240,6 +295,7 @@ class WardrobeGenerator():
 
 
     def handle_delete(self):
+        debug('handle_delete()')
         print('Not yet implemented')
 
     def handle_delete_cli(self, args):
@@ -278,14 +334,14 @@ class WardrobeGenerator():
         print('Not yet implemented')
 
     def handle_list_cli(self, args):
-        debug('handle_add_cli({0})'.format(','.join(args)))
+        debug('handle_list_cli({0})'.format(','.join(args)))
 
         if len(args) == 0:
             print('List Help -> ',
                 '\n\t[type:{{{0}}}]\n\t[subtype:{{{1}}}]\n\t[color:str]\n\t[temperature:<{2}>]\n\t[price:<$#>]'
                 .format( ','.join(self.article_map.keys()), "depends on type", ','.join(self.weather)))
         
-        if len(args) == 1 and args[0] == 'All':
+        if len(args) == 1 and args[0] == 'all':
             for article_type in self.article_map.keys():
                 
                 articles = self.wardrobe.list_by_type(article_type)
@@ -302,7 +358,7 @@ class WardrobeGenerator():
                 print("No items")
 
             for article in articles:
-                print(article.summary())
+                print('article:',article.summary())
 
 
     def handle_search(self):
@@ -332,6 +388,8 @@ class WardrobeGenerator():
     def handle_generate_cli(self, args):
         debug('handle_generate_cli({0})'.format(','.join(args)))
 
+        generation_rule, generation_selection, articles = "","",[]
+
         if len(args) == 0:
             print('Generate Help:'+
                 '\n\trandom\n\tpalette: [{0}]\n\tweather: [{1}]\n\tuse: [{2}]'
@@ -347,7 +405,7 @@ class WardrobeGenerator():
                     available_articles = self.wardrobe.list_by(availabe_type)
                     if available_articles:
                         random_article = random.choice(self.wardrobe.list_by(availabe_type))
-                        print("{0} | {1}".format(availabe_type, random_article))
+                        articles.append(random_article)
 
         elif len(args) > 1:
 
@@ -367,7 +425,7 @@ class WardrobeGenerator():
 
                         if available_articles:
                             random_article = random.choice(available_articles)
-                            print("{0} | {1}".format(availabe_type, random_article))
+                            articles.append(random_article)
 
             elif generation_rule == "weather":
                 if generation_selection in self.weather:
@@ -382,7 +440,7 @@ class WardrobeGenerator():
 
                             if articles_for_use:
                                 random_article = random.choice(articles_for_use)
-                                print("{0} | {1}".format(availabe_type, random_article))
+                                articles.append(random_article)
 
             elif generation_rule == "use":
                 if generation_selection in self.uses:
@@ -400,10 +458,28 @@ class WardrobeGenerator():
 
                                 if articles_for_use:
                                     random_article = random.choice(articles_for_use)
-                                    print("{0} | {1}".format(availabe_type, random_article))
+                                    articles.append(random_article)
+
+
+        fit = Outfit(self.article_map, articles)
+        
+        print('fit',fit)
+
+        self.wardrobe.add_outfit(fit)
+
+        return fit
+
+
+    def handle_history_cli(self, args):
+        debug('handle_history_cli({0})'.format(','.join(args)))
+
+        for fit in self.wardrobe.outfit_history:
+            print('fit',fit)
+            print('')
+
 
     def handle_import_cli(self, args):
-        debug('handle_generate_cli({0})'.format(','.join(args)))
+        debug('handle_import_cli({0})'.format(','.join(args)))
 
         if len(args) == 0:
             print('Import Help:'+
@@ -411,6 +487,8 @@ class WardrobeGenerator():
 
         else:
             wardrobe_data_filename = args[0]
+
+            imported = 0
 
             cwd = os.getcwd()
             fp = "{0}/{1}".format(cwd, wardrobe_data_filename)
@@ -449,13 +527,16 @@ class WardrobeGenerator():
 
                     new_article = Article(article_type, article_subtype, description, colors, temp, price)
 
-                    print('Importing new article: ', new_article)
+                    imported += 1
+                    debug('Importing new article: ', new_article.summary())
 
                     self.wardrobe.add_article( new_article )
 
 
             else:
-                "No file found at [{0}]".format(fp)
+                print("No file found at [{0}]".format(fp))
+
+            print('Imported {0} articles'.format(imported))
             
 
 
@@ -532,11 +613,15 @@ class WardrobeGenerator():
             'delete':self.handle_delete_cli,
             'search':self.handle_search_cli,
             'generate':self.handle_generate_cli,
-            'import':self.handle_import_cli
+            'import':self.handle_import_cli,
+            'history':self.handle_history_cli,
         }
 
         print('')
-        cli_nav[args[1]](args[2:])
+        try:
+            cli_nav[args[1]](args[2:])
+        except:
+            print('Encountered an error while processing the CLI transaction')
         print('')
 
         self.save()
@@ -550,7 +635,7 @@ def debug(*msgs):
 
 def display_articles(articles: List[Article], msg: str=""):
     if msg:
-        print(msg)
+        print("+-|{0}|{1}+".format(msg,('-'*(100-len(msg)))))
 
     for article in articles:
         print("\t{0}".format(article.summary()))
@@ -649,7 +734,7 @@ def main():
 def is_cli_transaction( args: List[str] ) -> bool:
     
     if len(args) > 1:
-        return args[1] in ['add','list','delete','update','search','generate','import']
+        return args[1] in ['add','list','delete','update','search','generate','import','history']
 
     return False
 

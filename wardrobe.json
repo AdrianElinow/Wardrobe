@@ -1,1 +1,1519 @@
-{}
+{
+    "headwear": [
+        {
+            "article_type": "headwear",
+            "article_subtype": "beanie",
+            "description": "black braille",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "headwear",
+            "article_subtype": "beanie",
+            "description": "grey carhartt",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "headwear",
+            "article_subtype": "ballcap",
+            "description": "realtree camo",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "camouflage"
+            ]
+        },
+        {
+            "article_type": "headwear",
+            "article_subtype": "ballcap",
+            "description": "1791 hat",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "green"
+            ]
+        },
+        {
+            "article_type": "headwear",
+            "article_subtype": "ballcap",
+            "description": "'aegis' trucker",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "headwear",
+            "article_subtype": "ballcap",
+            "description": "dark gothic maga",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "headwear",
+            "article_subtype": "ballcap",
+            "description": "cthulhu",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "headwear",
+            "article_subtype": "ballcap",
+            "description": "'web designer'",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        }
+    ],
+    "undershirt": [
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "nazghul",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "plain tight",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "plain",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "plain fruit-of-the-loom",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "plain",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "burgundy"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "plain arizona v-neck",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "white-phosphor sakura",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "cthulhu god",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "lovedrafts",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "wendigo(on)",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "my first knife-fight",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "grunt-style",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "ghost-in-the-shell tachikoma",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "light-blue"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "plain loose",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "black-powder-red-earth",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "burgundy"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "t-shirt",
+            "description": "white-phosphor x f/m | goth girls",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "tanktop",
+            "description": "cutoff|2a",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "tanktop",
+            "description": "cutoff|cthulhu tanktop",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "tanktop",
+            "description": "cutoff|cutoff",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "tanktop",
+            "description": "cutoff|plain black tanktop",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "tanktop",
+            "description": "cutoff|anime girl cutoff",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "longsleeve",
+            "description": "yuengling",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "longsleeve",
+            "description": "turtleneck",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "longsleeve",
+            "description": "hounds-tooth turtleneck",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "thermal",
+            "description": "devops compression shirt",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "thermal",
+            "description": "devops compression shirt",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "thermal",
+            "description": "waffle-top",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "thermal",
+            "description": "waffle-top",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "dark-blue"
+            ]
+        },
+        {
+            "article_type": "undershirt",
+            "article_subtype": "thermal",
+            "description": "waffle-top",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "burgundy"
+            ]
+        }
+    ],
+    "overshirt": [
+        {
+            "article_type": "overshirt",
+            "article_subtype": "flannel",
+            "description": "",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "burgundy"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "flannel",
+            "description": "denim shirt",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "blue"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "flannel",
+            "description": "&blue flannel",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "green"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "flannel",
+            "description": "&blue button-down",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "light-grey"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "flannel",
+            "description": "worn flannel",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "red"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "flannel",
+            "description": "",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "red"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "flannel",
+            "description": "mechanics button-down",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "white-phosphor occult",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "mit",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "burgundy weilers",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "burgundy"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "amira elfeky",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "patchwork eyes",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "byanymeansnecessary",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "red"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "'not today' kitty",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "rooftop voter",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "white-phosphor x f/m 'david'",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "memento-mori",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "hoodie",
+            "description": "odst",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "green"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "sweater",
+            "description": "turtleneck",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "dark-blue"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "sweater",
+            "description": "longsleeve stitches",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "sweater",
+            "description": "",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "red"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "sweater",
+            "description": "cable-knit fishermans",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "beige"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "sweater",
+            "description": "crew-neck",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "light-blue"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "sweater",
+            "description": "cable-knit turtleneck",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "sweater",
+            "description": "quarter-zip",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "electric-blue button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "blue"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "dotted button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "dark-blue"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "burgundy-lined button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "dotted button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "dark-blue-lined button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "burgundy"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "cotton button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "s&l button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "loose button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "oxford",
+            "description": "light-blue-lined button-up",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "zip-up",
+            "description": "adidas track-jacket",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "overshirt",
+            "article_subtype": "zip-up",
+            "description": "fleece",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        }
+    ],
+    "outerwear": [
+        {
+            "article_type": "outerwear",
+            "article_subtype": "coat",
+            "description": "wool",
+            "weather": "any",
+            "price": 300,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "outerwear",
+            "article_subtype": "coat",
+            "description": "slim single-breasted",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "outerwear",
+            "article_subtype": "jacket",
+            "description": "thursday motorcycle",
+            "weather": "any",
+            "price": 400,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "outerwear",
+            "article_subtype": "jacket",
+            "description": "denim sherpa",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "blue"
+            ]
+        },
+        {
+            "article_type": "outerwear",
+            "article_subtype": "jacket",
+            "description": "leather af",
+            "weather": "any",
+            "price": 400,
+            "colors": [
+                "brown"
+            ]
+        },
+        {
+            "article_type": "outerwear",
+            "article_subtype": "jacket",
+            "description": "multicam gore-tex shell",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "camouflage"
+            ]
+        }
+    ],
+    "pants": [
+        {
+            "article_type": "pants",
+            "article_subtype": "jeans",
+            "description": "levi's denizens",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "blue"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "jeans",
+            "description": "sun co. jeans",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "blue"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "jeans",
+            "description": "viktos operator",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "jeans",
+            "description": "wide-leg",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "jeans",
+            "description": "skinny",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "jeans",
+            "description": "skinny",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "light-blue"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "jeans",
+            "description": "skinny",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "dark-blue"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "jeans",
+            "description": "skinny",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "dark-blue"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "chinos",
+            "description": "'ultimate'",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "chinos",
+            "description": "'ultimate'",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "chinos",
+            "description": "'ultimate'",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "chinos",
+            "description": "'ultimate'",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "light-grey"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "chinos",
+            "description": "'ultimate'",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "beige"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "chinos",
+            "description": "amazon",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "beige"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "shorts",
+            "description": "chino",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "blue"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "shorts",
+            "description": "black youngla",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "shorts",
+            "description": "orange gymreapers",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "orange"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "shorts",
+            "description": "amazon",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "shorts",
+            "description": "short",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "sweatpants",
+            "description": "blackout adidas track",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "sweatpants",
+            "description": "adidas track",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "sweatpants",
+            "description": "adidas track",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "sweatpants",
+            "description": "loose adidas track",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "sweatpants",
+            "description": "adidas track",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "sweatpants",
+            "description": "skinny jogger",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "pants",
+            "article_subtype": "sweatpants",
+            "description": "skinny jogger",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        }
+    ],
+    "accessory": [
+        {
+            "article_type": "accessory",
+            "article_subtype": "gloves",
+            "description": "leather driving gloves",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "bag",
+            "description": "helikon-tex sling",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "bag",
+            "description": "vertx backpack",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "bag",
+            "description": "leather viktos ccw sling",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "bag",
+            "description": "leather lv duffle",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "bag",
+            "description": "checkered lv sling",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "bag",
+            "description": "checkered lv satchel",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "mask",
+            "description": "cryptic nine",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "mask",
+            "description": "3-hole ski-mask",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "headphones",
+            "description": "sony wx5-1000",
+            "weather": "any",
+            "price": 300,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "headphones",
+            "description": "apple wired earbuds",
+            "weather": "any",
+            "price": 30,
+            "colors": [
+                "white"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "belt",
+            "description": "leather",
+            "weather": "any",
+            "price": 40,
+            "colors": [
+                "brown"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "belt",
+            "description": "leather",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "belt",
+            "description": "ccw",
+            "weather": "any",
+            "price": 80,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "belt",
+            "description": "fabric",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "watch",
+            "description": "fossil watch",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "bracelet",
+            "description": "chrome-hearts alternating",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "bracelet",
+            "description": "project-comte",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "bracelet",
+            "description": "hoop&chain",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "necklace",
+            "description": "chrome-hearts crosses pendant necklace",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "necklace",
+            "description": "simple chain",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "necklace",
+            "description": "hanlon's razor",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "necklace",
+            "description": "personal fears raptor-chain",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "project-comte statement ring",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "personal-fears ribcage",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "personal-fears twin-skull",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "7-sided honeycomb",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "chipped chasm",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "promises-made",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "personal fears sludge",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "silver"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "blacksmith",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "scored",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "grey"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "little flat",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "ring",
+            "description": "silicone",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "light-grey"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "glasses",
+            "description": "pit vipers - ballistic",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "glasses",
+            "description": "pit vipers - black",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "glasses",
+            "description": "pit vipers - blue/green",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "blue"
+            ]
+        },
+        {
+            "article_type": "accessory",
+            "article_subtype": "glasses",
+            "description": "pit vipers - white/pink 'miami'",
+            "weather": "any",
+            "price": 0,
+            "colors": [
+                "white"
+            ]
+        }
+    ],
+    "outfit_history": [
+        {},
+        {
+            "headwear": {
+                "article_type": "headwear",
+                "article_subtype": "beanie",
+                "description": "grey carhartt",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "grey"
+                ]
+            },
+            "undershirt": {
+                "article_type": "undershirt",
+                "article_subtype": "t-shirt",
+                "description": "plain",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "burgundy"
+                ]
+            },
+            "overshirt": {
+                "article_type": "overshirt",
+                "article_subtype": "oxford",
+                "description": "dotted button-up",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "black"
+                ]
+            },
+            "outerwear": {
+                "article_type": "outerwear",
+                "article_subtype": "jacket",
+                "description": "leather af",
+                "weather": "any",
+                "price": 400,
+                "colors": [
+                    "brown"
+                ]
+            },
+            "pants": {
+                "article_type": "pants",
+                "article_subtype": "jeans",
+                "description": "skinny",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "dark-blue"
+                ]
+            },
+            "accessory": {
+                "article_type": "accessory",
+                "article_subtype": "belt",
+                "description": "leather",
+                "weather": "any",
+                "price": 0,
+                "colors": [
+                    "grey"
+                ]
+            }
+        }
+    ]
+}
