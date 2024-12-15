@@ -187,6 +187,8 @@ class Wardrobe():
 
 class WardrobeGenerator():
 
+    cli_modes = ['add','list','delete','generate','import','history','help']
+
     def __init__(self, fixed_data_filename, wardrobe_data_filename="", is_cli=False):
         self.load_fixed_data(fixed_data_filename)
         self.is_cli = is_cli
@@ -405,7 +407,7 @@ class WardrobeGenerator():
 
         if len(args) == 0:
             print('Generate Help:'+
-                '\n\trandom\n\tpalette: [{0}]\n\tweather: [{1}]\n\tuse: [{2}]'
+                '\n\tRandom\n\tPalette: [{0}]\n\tWeather: [{1}]\n\tUse: [{2}]'
                 .format( '|'.join(list(self.palettes.keys())), '|'.join(self.weather), '|'.join(self.uses)))
         
         elif len(args) == 1:
@@ -420,13 +422,28 @@ class WardrobeGenerator():
                         random_article = random.choice(self.wardrobe.list_by(availabe_type))
                         articles.append(random_article)
 
+            elif generation_rule == 'palette':
+                print('Generate Help | Palettes:'+
+                    '\n\t{0}'.format(', '.join(list(self.palettes.keys()))))
+
+            elif generation_rule == 'weather':
+                print('Generate Help | Weather:'+
+                    '\n\t{0}'.format(', '.join(list(self.weather))))
+
+            elif generation_rule == 'use':
+                print('Generate Help | Uses:'+
+                    '\n\t{0}'.format(', '.join(list(self.uses))))
+
+            else:
+                print('Unrecognized generation mode: ',generation_rule)
+
         elif len(args) > 1:
 
             generation_rule, generation_selection = args[0], args[1]
 
             if generation_rule == "palette":
-                if generation_selection in self.palettes.keys():
 
+                if generation_selection in self.palettes.keys():
                     print("Generating from Palette {0}".format(generation_selection))
 
                     colors_for_palette = self.palettes[generation_selection]
@@ -441,8 +458,8 @@ class WardrobeGenerator():
                             articles.append(random_article)
 
             elif generation_rule == "weather":
-                if generation_selection in self.weather:
 
+                if generation_selection in self.weather:
                     print("Generating for {0} Weather".format(generation_selection))
 
                     for availabe_type in self.wardrobe.data.keys():
@@ -456,6 +473,7 @@ class WardrobeGenerator():
                                 articles.append(random_article)
 
             elif generation_rule == "use":
+
                 if generation_selection in self.uses:
 
                     print("Generating for {0}".format(generation_selection))
@@ -473,18 +491,24 @@ class WardrobeGenerator():
                                     random_article = random.choice(articles_for_use)
                                     articles.append(random_article)
 
+            else:
+                print('Unrecognized generation mode: ',generation_selection)
+
         if articles:
             fit = Outfit(self.article_map, articles)
-            
             print(fit)
-
             self.wardrobe.add_outfit(fit)
-
             return fit
 
 
     def handle_history_cli(self, args):
         debug('handle_history_cli({0})'.format(','.join(args)))
+
+        if args:
+            if args[0] == 'clear':
+                self.wardrobe.outfit_history = []
+                print('cleared')
+                return
 
         for fit in self.wardrobe.outfit_history:
             print(fit)
@@ -617,6 +641,10 @@ class WardrobeGenerator():
 
         self.save('wardrobe.json')
 
+    def help_cli(*args):
+        print(f""" ### Wardrobe Generator CLI ### \n\t### usages ###\n{'\n'.join(WardrobeGenerator.cli_modes)}""")
+
+
     def handle_cli_transaction(self, args):
 
         cli_nav = {
@@ -627,6 +655,7 @@ class WardrobeGenerator():
             'generate':self.handle_generate_cli,
             'import':self.handle_import_cli,
             'history':self.handle_history_cli,
+            'help':WardrobeGenerator.help_cli
         }
 
         print('')
@@ -642,6 +671,7 @@ class WardrobeGenerator():
         print('')
 
         self.save()
+
 
 
 def debug(*msgs):
@@ -752,7 +782,7 @@ def main():
 def is_cli_transaction( args: List[str] ) -> bool:
     
     if len(args) > 1:
-        return args[1] in ['add','list','delete','update','search','generate','import','history']
+        return args[1] in WardrobeGenerator.cli_modes
 
     return False
 
