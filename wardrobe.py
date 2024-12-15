@@ -112,7 +112,9 @@ class Wardrobe():
     def list_by_weather(self, article_type: str, weather: str) -> List[Article]:
         articles = self.list_by_type(article_type)
 
-        return [article for article in articles if weather in article.weather]
+        selected_articles = [article for article in articles if weather in article.weather]
+
+        return selected_articles
 
 
     def dump(self) -> Dict:
@@ -368,7 +370,7 @@ class WardrobeGenerator():
                             print("{0} | {1}".format(availabe_type, random_article))
 
             elif generation_rule == "weather":
-                if generation_selection in self.palettes.keys():
+                if generation_selection in self.weather:
 
                     print("Generating for {0} Weather".format(generation_selection))
 
