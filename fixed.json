@@ -41,6 +41,13 @@
             "bags"
         ]
     },
+    "uses": [
+        "athletic",
+        "comfy",
+        "casual",
+        "formal",
+        "business-casual"
+    ],
     "palettes": {
         "neutral": [
             "White",
@@ -121,6 +128,12 @@
         ],
         "fall": []
     },
+    "weather": [
+        "hot",
+        "cold",
+        "wet",
+        "any"
+    ],
     "compatibility": {
         "White": [
             "White",
