@@ -22,6 +22,7 @@ class Article():
         self.colors = [ c.lower() for c in colors] if type(colors) == type([]) else []
 
     def from_json(json: Dict):
+
         try:
             return Article( json['article_type'], json['article_subtype'], json['description'], json['colors'], json['weather'], json['price'])
         except KeyError as ke:
@@ -43,28 +44,32 @@ class Article():
 class Outfit():
 
     def __init__(self, article_map, articles: List[Article]):
+
         if not articles:
             raise IndexError("'articles' cannot be empty")
 
-        self.articles = { article_type:None for article_type in article_map.keys() }
+        if type(articles) != type([]):
+            raise ValueError("Invalid type of 'articles'")
 
-        for article in articles:
-            if article:
-                self.articles[article.article_type] = article
+        self.articles = { article.article_type: article for article in articles }
 
-    def from_json(article_map, json: List[Dict]):
-        print('from_json',json)
+    def from_json(article_map, outfit_json: Dict):
 
-        return Outfit( article_map, [ Article.from_json(article) for article in json] )
+        articles = []
+
+        for article_type, article in outfit_json.items():
+            articles.append(Article.from_json(article))
+
+        return Outfit( article_map, articles )
 
     def dump(self):
-        return { article_type:article.jsonify() for article_type, article in self.articles.items() if article }
+        return { article_type:article.jsonify() for article_type, article in self.articles.items() }
 
     def __str__(self):
 
         summary = "Outfit"
 
-        for article_type, article in self.articles.items():
+        for article_type,article in self.articles.items():
             if article:
                 summary += "\n{0:10}|{1}".format(article_type, article)
 
@@ -75,13 +80,16 @@ class Outfit():
 class Wardrobe():
     
     def __init__(self, article_map, json):
-        self.data = { article_type:Wardrobe.parse_articles(articles) for article_type, articles in json.items() }
+        
         self.outfit_history = []
-
         if 'outfit_history' in json.keys() and json['outfit_history'] != []:
-            print('loading outfit history')
-            self.outfit_history.append(Outfit.from_json(article_map, json['outfit_history']))
+            for outfit_data in json['outfit_history']:
+                if outfit_data:
+                    self.outfit_history.append(Outfit.from_json(article_map, outfit_data))
+            json.pop('outfit_history')
 
+        self.data = { article_type:Wardrobe.parse_articles(articles) for article_type, articles in json.items()}
+        
         for article_type in article_map.keys():
             if article_type not in self.data.keys():
                 self.data[article_type] = []
@@ -94,6 +102,9 @@ class Wardrobe():
             self.outfit_history = [outfit]
 
     def parse_articles(articles: List[str]) -> List[Article]:
+        if type(articles) != type([]):
+            raise ValueError("incorrect type 'articles'")
+
         if not articles:
             return []
     
@@ -210,7 +221,7 @@ class WardrobeGenerator():
 
         except JSONDecodeError as jsonde:
             print("Failed to load application data.")
-            print("Error:",jsonde)
+            debug("Error:",jsonde)
             sys.exit(1)
 
 
@@ -224,7 +235,8 @@ class WardrobeGenerator():
                 with open(wardrobe_data_filename) as wardrobe_data:
                     data = json.load(open(wardrobe_data_filename))
                 return data
-            except:
+            except Exception as e:
+                debug(e)
                 print("Failed to load data from {0}".format(wardrobe_data_filename))
                 wardrobe_data_filename = "---"
 
@@ -243,7 +255,8 @@ class WardrobeGenerator():
                     with open(wardrobe_data_filename) as wardrobe_data:
                         data = json.load(open(wardrobe_data_filename))
                     return data
-                except:
+                except Exception as e:
+                    debug(e)
                     print("Failed to load data from {0}".format(wardrobe_data_filename))
                     wardrobe_data_filename = "---"
 
@@ -460,22 +473,21 @@ class WardrobeGenerator():
                                     random_article = random.choice(articles_for_use)
                                     articles.append(random_article)
 
+        if articles:
+            fit = Outfit(self.article_map, articles)
+            
+            print(fit)
 
-        fit = Outfit(self.article_map, articles)
-        
-        print('fit',fit)
+            self.wardrobe.add_outfit(fit)
 
-        self.wardrobe.add_outfit(fit)
-
-        return fit
+            return fit
 
 
     def handle_history_cli(self, args):
         debug('handle_history_cli({0})'.format(','.join(args)))
 
         for fit in self.wardrobe.outfit_history:
-            print('fit',fit)
-            print('')
+            print(fit)
 
 
     def handle_import_cli(self, args):
@@ -618,10 +630,15 @@ class WardrobeGenerator():
         }
 
         print('')
+        cli_nav[args[1]](args[2:])
+
+        '''
         try:
             cli_nav[args[1]](args[2:])
-        except:
+        except Exception as e:
+            debug(e)
             print('Encountered an error while processing the CLI transaction')
+        '''
         print('')
 
         self.save()
@@ -670,7 +687,7 @@ def robust_str_entry(prompt, options=[]):
                                 e = options[int(e)]
                                 selected.append(e)
                             except ValueError as ve:
-                                pass
+                                debug(ve)
                         else:
                             selected.append(e)
                     
@@ -695,7 +712,8 @@ def robust_str_entry(prompt, options=[]):
             debug(ve)
             entry = None
             print('Invalid')
-        except KeyboardInterrupt:
+        except KeyboardInterrupt as ki:
+            debug(ki)
             sys.exit(0)
 
     return entry
