@@ -1605,15 +1605,15 @@
                     "black"
                 ]
             },
-            "footwear":{
-              "article_type": "footwear",
-              "article_subtype": "dress-shoes",
-              "description": "thursday",
-              "weather": "any",
-              "price": 200,
-              "colors": [
-                  "black"
-              ]
+            "footwear": {
+                "article_type": "footwear",
+                "article_subtype": "dress-shoes",
+                "description": "thursday",
+                "weather": "any",
+                "price": 200,
+                "colors": [
+                    "black"
+                ]
             },
             "accessory": {
                 "article_type": "accessory",

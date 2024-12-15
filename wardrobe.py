@@ -196,7 +196,7 @@ class WardrobeGenerator():
         self.wardrobe = Wardrobe(self.article_map, self.load_wardrobe_data(wardrobe_data_filename))
         self.filepath = wardrobe_data_filename
 
-    def save(self, save_filepath=None, pretty=True ):
+    def save(self, save_filepath=None, pretty=False ):
         if not save_filepath:
             save_filepath = self.filepath
 
@@ -504,6 +504,8 @@ class WardrobeGenerator():
         debug('handle_last_cli({0})'.format(','.join(args)))
         print("Not yet implemented")
 
+        print('options: show(default/no option), save (to wardrobe saved outfits)')
+
     def handle_history_cli(self, args):
         debug('handle_history_cli({0})'.format(','.join(args)))
 
@@ -642,7 +644,8 @@ class WardrobeGenerator():
             except KeyboardInterrupt as ki:
                 break
 
-        self.save('wardrobe.json')
+        pretty = True
+        self.save('wardrobe.json', pretty)
 
     def help_cli(*args):
         print(f""" ### Wardrobe Generator CLI ### \n\t### usages ###\n{'\n'.join(WardrobeGenerator.cli_modes)}""")
@@ -674,7 +677,8 @@ class WardrobeGenerator():
         '''
         print('')
 
-        self.save()
+        pretty = True
+        self.save(pretty=pretty)
 
 
 
