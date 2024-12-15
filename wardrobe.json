@@ -1461,6 +1461,96 @@
             "colors": [
                 "black"
             ]
+        },
+        {
+            "article_type": "footwear",
+            "article_subtype": "boots",
+            "description": "thursday zip-up",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "footwear",
+            "article_subtype": "boots",
+            "description": "thursday lace-up",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "brown"
+            ]
+        },
+        {
+            "article_type": "footwear",
+            "article_subtype": "boots",
+            "description": "thursday jhodpurs",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "beige"
+            ]
+        },
+        {
+            "article_type": "footwear",
+            "article_subtype": "boots",
+            "description": "thoroughgood moc-toe",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "footwear",
+            "article_subtype": "sneakers",
+            "description": "converse",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "footwear",
+            "article_subtype": "boots",
+            "description": "timberlands",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "beige"
+            ]
+        },
+        {
+            "article_type": "footwear",
+            "article_subtype": "boots",
+            "description": "redwing moc-toe",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "brown"
+            ]
+        },
+        {
+            "article_type": "footwear",
+            "article_subtype": "slippers",
+            "description": "plush moccassin",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "black"
+            ]
+        },
+        {
+            "article_type": "footwear",
+            "article_subtype": "boots",
+            "description": "merrel hiking",
+            "weather": "any",
+            "price": 200,
+            "colors": [
+                "brown"
+            ]
         }
     ],
     "outfit_history": [
@@ -1515,22 +1605,22 @@
                     "black"
                 ]
             },
+            "footwear":{
+              "article_type": "footwear",
+              "article_subtype": "dress-shoes",
+              "description": "thursday",
+              "weather": "any",
+              "price": 200,
+              "colors": [
+                  "black"
+              ]
+            },
             "accessory": {
                 "article_type": "accessory",
                 "article_subtype": "bag",
                 "description": "leather lv duffle",
                 "weather": "any",
                 "price": 0,
-                "colors": [
-                    "black"
-                ]
-            },
-            "footwear": {
-                "article_type": "footwear",
-                "article_subtype": "dress-shoes",
-                "description": "thursday",
-                "weather": "any",
-                "price": 200,
                 "colors": [
                     "black"
                 ]
