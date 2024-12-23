@@ -122,7 +122,7 @@ class Wardrobe():
         if article in self.data[article.article_type]:
             self.data[article.article_type].remove(article)
         else:
-            print("Article not found in '{0}'".format(article_type))
+            print("Article not found in '{0}'".format(article.article_type))
 
     def list_by_type(self, article_type: str) -> List:
 
@@ -222,7 +222,7 @@ class WardrobeGenerator():
             self.uses = self.fixed_data['uses']
 
 
-        except JSONDecodeError as jsonde:
+        except json.JSONDecodeError as jsonde:
             print("Failed to load application data.")
             debug("Error:",jsonde)
             sys.exit(1)
@@ -280,15 +280,15 @@ class WardrobeGenerator():
 
 
     def handle_add(self):
-        article_type = robust_str_entry("Article type: >", list(fixed_data['classifications'].keys()))
-        article_subtype = robust_str_entry("Article subtype: >",fixed_data['classifications'][article_type])
+        article_type = robust_str_entry("Article type: >", list(self.fixed_data['classifications'].keys()))
+        article_subtype = robust_str_entry("Article subtype: >",self.fixed_data['classifications'][article_type])
 
-        existing = wardrobe.list_by(article_type, article_subtype)
+        existing = self.wardrobe.list_by(article_type, article_subtype)
         if existing:
             print("Existing {0}:{1}".format(article_type, article_subtype))        
             display_articles(existing)
 
-        article = create_article(fixed_data, article_type, article_subtype)
+        article = create_article(self.fixed_data, article_type, article_subtype)
         self.wardrobe.add_article(article)
 
 
@@ -341,7 +341,7 @@ class WardrobeGenerator():
 
                 if len(items) > 1:
                     print("{0} items selected:".format(len(items)))
-                    display_articles(articles)
+                    display_articles(items)
                 else:
                     self.wardrobe.remove_article(items[0])
 
@@ -394,9 +394,6 @@ class WardrobeGenerator():
         else:
             print('No data to display')
 
-    def handle_search_cli(self):
-        print('handle_search_cli({0})'.format(','.join(args)))
-        print('Not yet implemented')
 
     def handle_create_outfit(self):
         print('Not yet implemented')
