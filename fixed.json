@@ -65,7 +65,8 @@
             "zip-up",
             "jacket",
             "sweatpants",
-            "sneakers"
+            "sneakers",
+            "headphones"
         ],
         "comfy": [
             "ballcap",
@@ -84,7 +85,16 @@
             "cargo-pants",
             "boots",
             "sneakers",
-            "slippers"
+            "slippers",
+            "ring",
+            "necklace",
+            "bracelet",
+            "headphones",
+            "mask",
+            "gloves",
+            "glasses",
+            "bag",
+            "watch"
         ],
         "casual": [
             "ballcap",
@@ -105,7 +115,17 @@
             "cargo-pants",
             "boots",
             "sneakers",
-            "slippers"
+            "slippers",
+            "ring",
+            "belt",
+            "necklace",
+            "bracelet",
+            "headphones",
+            "mask",
+            "gloves",
+            "glasses",
+            "bag",
+            "watch"
         ],
         "formal": [
             "tshirt",
@@ -116,7 +136,15 @@
             "coat",
             "chinos",
             "boots",
-            "dress-shoes"
+            "dress-shoes",
+            "ring",
+            "belt",
+            "necklace",
+            "bracelet",
+            "gloves",
+            "glasses",
+            "bag",
+            "watch"
         ],
         "business-casual": [
             "tshirt",
@@ -132,7 +160,17 @@
             "chinos",
             "sneakers",
             "boots",
-            "dress-shoes"
+            "dress-shoes",
+            "ring",
+            "belt",
+            "necklace",
+            "bracelet",
+            "headphones",
+            "mask",
+            "gloves",
+            "glasses",
+            "bag",
+            "watch"
         ],
         "labor": [
             "ballcap",

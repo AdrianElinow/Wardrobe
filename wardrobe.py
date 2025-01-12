@@ -1,19 +1,23 @@
 
-import json, os, platform, sys, pprint, random
+import json, os, platform, sys, random, uuid
+from pprint import pprint
 from typing import *
 
 DEBUG = False
-PRETTY = False
+PRETTY = True
 
 
 class Article():
 
-    def __init__(self,  article_type : str, 
+    def __init__(self,  oid: str,
+                        article_type : str, 
                         subtype: str, 
                         description : str, 
                         colors : List[str],
                         weather : List[str], 
                         price : float):
+
+        self.oid = oid if oid else uuid.uuid4()
 
         self.article_type = article_type
         self.article_subtype = subtype
@@ -23,9 +27,10 @@ class Article():
         self.colors = [ c.lower() for c in colors] if type(colors) == type([]) else []
 
     def from_json(json: Dict):
-
         try:
-            return Article( json['article_type'], json['article_subtype'], json['description'], json['colors'], json['weather'], json['price'])
+            oid = uuid.uuid4() if 'oid' not in json else uuid.UUID(json['oid'])
+
+            return Article(oid, json['article_type'], json['article_subtype'], json['description'], json['colors'], json['weather'], json['price'])
         except KeyError as ke:
             print("Error while importing from JSON \n{0}\n".format(json))
             print(ke)
@@ -40,39 +45,59 @@ class Article():
         return self.summary()
 
     def jsonify(self):
-        return self.__dict__
+        data = self.__dict__
+        data['oid'] = str(data['oid'])
+
+        return data
 
 class Outfit():
 
-    def __init__(self, article_map, articles: List[Article]):
+    def __init__(self, oid, article_map, articles: List[Article]):
+
+        self.oid = uuid.uuid4() if not oid else oid
 
         if not articles:
             raise IndexError("'articles' cannot be empty")
 
-        if type(articles) != type([]):
-            raise ValueError("Invalid type of 'articles'")
-
-        self.articles = { article.article_type: article for article in articles }
+        self.articles = articles
 
     def from_json(article_map, outfit_json: Dict):
 
-        articles = []
+        articles = {}
+        oid = uuid.uuid1()
 
         for article_type, article in outfit_json.items():
-            articles.append(Article.from_json(article))
+            
+            if article_type == 'oid':
+                oid = uuid.UUID(article)
+                continue
 
-        return Outfit( article_map, articles )
+            items = []
+
+            if type(article) == type({}):
+                items.append(article)
+            elif type(article) == type([]):
+                items = article
+
+            articles[article_type] = [ Article.from_json(item) for item in items ]
+
+        return Outfit( oid, article_map, articles )
 
     def dump(self):
-        return { article_type:article.jsonify() for article_type, article in self.articles.items() }
+        data = { article_type:[ article.jsonify() for article in articles ] for article_type, articles in self.articles.items() }
+
+        data['oid'] = str(self.oid)
+
+        return data
 
     def __str__(self):
 
-        summary = "Outfit"
+        summary = f"Outfit - [{self.oid}]"
 
-        for article_type,article in self.articles.items():
-            if article:
-                summary += "\n{0:10}|{1}".format(article_type, article)
+        for article_type,articles in self.articles.items():
+            if articles:
+                summaries = [ article.summary() for article in articles ]
+                summary += "\n{0:10}| {1}".format(article_type, '\n\t'.join(summaries) )
 
         return summary
 
@@ -278,20 +303,6 @@ class WardrobeGenerator():
         output.close()
         return fixed_data
 
-
-    def handle_add(self):
-        article_type = robust_str_entry("Article type: >", list(fixed_data['classifications'].keys()))
-        article_subtype = robust_str_entry("Article subtype: >",fixed_data['classifications'][article_type])
-
-        existing = wardrobe.list_by(article_type, article_subtype)
-        if existing:
-            print("Existing {0}:{1}".format(article_type, article_subtype))        
-            display_articles(existing)
-
-        article = create_article(fixed_data, article_type, article_subtype)
-        self.wardrobe.add_article(article)
-
-
     def handle_add_cli(self, args):
         debug('handle_add_cli({0})'.format(','.join(args)))
         
@@ -309,10 +320,6 @@ class WardrobeGenerator():
             article_type, article_subtype, description, colors, temp, price = self.parse_article_cli_args(args)
             article = self.wardrobe.add_article(Article(article_type, article_subtype, description, colors, temp, price))
 
-
-    def handle_delete(self):
-        debug('handle_delete()')
-        print('Not yet implemented')
 
     def handle_delete_cli(self, args):
         debug('handle_delete_cli({0})'.format(','.join(args)))
@@ -345,10 +352,6 @@ class WardrobeGenerator():
                 else:
                     self.wardrobe.remove_article(items[0])
 
-
-    def handle_nav(self):
-        print('Not yet implemented')
-
     def handle_list_cli(self, args):
         debug('handle_list_cli({0})'.format(','.join(args)))
 
@@ -377,30 +380,6 @@ class WardrobeGenerator():
                 print('article:',article.summary())
 
 
-    def handle_search(self):
-        #["Type","Subtype","Description","Weather","Price","Colors","Palettes","Uses"]
-        categories = robust_str_entry("Search by >", list(fixed_data['classifications'].keys()))
-        #inclusivity = "Inclusive"
-
-        #if len(categories) > 1:
-        #    inclusivity = robust_str_entry("Inclusive/Exclusive >")
-
-        criteria = categories
-
-        data = wardrobe.list_by_type(criteria)
-
-        if data:
-            display_articles(data)
-        else:
-            print('No data to display')
-
-    def handle_search_cli(self):
-        print('handle_search_cli({0})'.format(','.join(args)))
-        print('Not yet implemented')
-
-    def handle_create_outfit(self):
-        print('Not yet implemented')
-
     def handle_generate_cli(self, args):
         debug('handle_generate_cli({0})'.format(','.join(args)))
 
@@ -410,96 +389,93 @@ class WardrobeGenerator():
             print('Generate Help:'+
                 '\n\tRandom\n\tPalette: [{0}]\n\tWeather: [{1}]\n\tUse: [{2}]'
                 .format( '|'.join(list(self.palettes.keys())), '|'.join(self.weather), '|'.join(self.uses)))
-        
-        elif len(args) == 1:
-            generation_rule = args[0]
 
-            if generation_rule == "random":
-                print('Generating Randomized Outfit\n')
+        elif len(args) >= 1:
 
-                for availabe_type in self.wardrobe.data.keys():
-                    available_articles = self.wardrobe.list_by(availabe_type)
-                    if available_articles:
-                        random_article = random.choice(self.wardrobe.list_by(availabe_type))
-                        articles.append(random_article)
+            criteria = {}
 
-            elif generation_rule == 'palette':
-                print('Generate Help | Palettes:'+
-                    '\n\t{0}'.format(', '.join(list(self.palettes.keys()))))
+            for criterium in args:
+                category, selection = criterium.split(':')
+                criteria[category] = selection
 
-            elif generation_rule == 'weather':
-                print('Generate Help | Weather:'+
-                    '\n\t{0}'.format(', '.join(list(self.weather))))
-
-            elif generation_rule == 'use':
-                print('Generate Help | Uses:'+
-                    '\n\t{0}'.format(', '.join(list(self.uses))))
-
-            else:
-                print('Unrecognized generation mode: ',generation_rule)
-
-        elif len(args) > 1:
-
-            generation_rule, generation_selection = args[0], args[1]
-
-            if generation_rule == "palette":
-
-                if generation_selection in self.palettes.keys():
-                    print("Generating from Palette {0}".format(generation_selection))
-
-                    colors_for_palette = self.palettes[generation_selection]
-                    neutral_colors = self.palettes['neutral']
-                    colors_for_palette += neutral_colors
-
-                    for availabe_type in self.wardrobe.data.keys():
-                        available_articles = self.wardrobe.list_by_color(availabe_type, colors_for_palette)
-
-                        if available_articles:
-                            random_article = random.choice(available_articles)
-                            articles.append(random_article)
-
-            elif generation_rule == "weather":
-
-                if generation_selection in self.weather:
-                    print("Generating for {0} Weather".format(generation_selection))
-
-                    for availabe_type in self.wardrobe.data.keys():
-                        available_articles = self.wardrobe.list_by(availabe_type)
-
-                        if available_articles:
-                            articles_for_use = self.wardrobe.list_by_weather(availabe_type, generation_selection)
-
-                            if articles_for_use:
-                                random_article = random.choice(articles_for_use)
-                                articles.append(random_article)
-
-            elif generation_rule == "use":
-
-                if generation_selection in self.uses:
-
-                    print("Generating for {0}".format(generation_selection))
-
-                    for availabe_type in self.wardrobe.data.keys():
-                        available_articles = self.wardrobe.list_by(availabe_type)
-
-                        if available_articles:
-                            subtypes_for_use = self.uses[generation_selection]
-    
-                            if subtypes_for_use:
-                                articles_for_use = self.wardrobe.list_by_subtypes(availabe_type, subtypes_for_use)
-
-                                if articles_for_use:
-                                    random_article = random.choice(articles_for_use)
-                                    articles.append(random_article)
-
-            else:
-                print('Unrecognized generation mode: ',generation_selection)
+            articles = self.generate_by_criteria(criteria)
 
         if articles:
-            fit = Outfit(self.article_map, articles)
+            fit = Outfit(uuid.uuid4(), self.article_map, articles)
             print(fit)
             self.wardrobe.add_outfit(fit)
             return fit
+
+
+    def generate_by_criteria(self, criteria={}):
+        debug('generate_by_criteria ->',criteria)
+
+        articles = { available_type:[] for available_type in self.wardrobe.data.keys()}
+
+        for available_type in self.wardrobe.data.keys():
+
+            available_articles = self.wardrobe.list_by(available_type)
+
+            if available_articles:  
+
+                # filter by uses
+                available_articles = self.filter_by_use(criteria, available_articles)
+
+                # filter by weather
+                available_articles = self.filter_by_weather(criteria, available_articles)
+
+                # filter by color palette
+                available_articles = self.filter_by_color_palette(criteria, available_articles)
+
+                if available_articles:
+
+                    if available_type == 'accessory':      # provide multiple options for accessories
+
+                        num_accessories = random.randrange(1,5)
+
+                        for i in range(num_accessories):
+                            random_article = random.choice(available_articles)
+                            available_articles.remove(random_article)
+                            articles[available_type].append(random_article)
+
+                    else:
+                        random_article = random.choice(available_articles)
+                        articles[available_type].append(random_article)
+
+        return articles
+
+    def filter_by_use(self, criteria, articles):
+
+        if 'use' in criteria.keys():
+
+            return [ article for article in articles if article.article_subtype in self.uses[criteria['use']] ]
+
+        else: # if not filtering by use, keep items
+            return articles
+
+    def filter_by_weather(self, criteria, articles):
+        
+        if 'weather' in criteria.keys():
+
+            return [ article for article in articles if ('any' in article.weather or criteria['weather'] in article.weather) ]
+
+        else:  # if not filtering by weather, keep items
+            return articles
+
+
+    def filter_by_color_palette(self, criteria, articles):
+        
+        if 'color' in criteria.keys():
+
+            colors_for_palette = self.palettes[criteria['color']]
+            neutral_colors = self.palettes['neutral']
+            colors_for_palette += neutral_colors
+
+            return [ article for article in articles if Wardrobe.article_color_in_colors(article, colors_for_palette)]
+
+        else:  # if not filtering by weather, keep items
+            return articles
+
 
     def handle_last_cli(self, args):
         debug('handle_last_cli({0})'.format(','.join(args)))
@@ -518,6 +494,7 @@ class WardrobeGenerator():
 
         for fit in self.wardrobe.outfit_history:
             print(fit)
+            print('')
 
 
     def handle_import_cli(self, args):
@@ -619,33 +596,8 @@ class WardrobeGenerator():
 
     def menu(self):
 
-        menu_nav = {
-            "add": self.handle_add,
-            "delete": self.handle_delete,
-            "nav": self.handle_nav,
-            'search' : self.handle_search,
-            'create outfit':self.handle_create_outfit,
-            'exit': None
-        }
-
-        while True:
-            try:
-                opt = robust_str_entry('> ', list(menu_nav.keys())).lower()
-
-                if opt == 'exit':
-                    break
-
-                menu_nav[opt]()
-
-                input('')
-                clear_screen()
-        
-            except ValueError as ve:
-                pass
-            except KeyboardInterrupt as ki:
-                break
-
-        self.save('wardrobe.json', PRETTY)
+        help_cli()
+        return
 
     def help_cli(*args):
         print(f""" ### Wardrobe Generator CLI ### \n\t### usages ###\n{'\n'.join(WardrobeGenerator.cli_modes)}""")
@@ -696,7 +648,6 @@ def display_articles(articles: List[Article], msg: str=""):
 
 
 def robust_str_entry(prompt, options=[]):
-    '''  '''
 
     if type(options) == type({}):
         debug("Converting dict keys to list of options")
@@ -773,7 +724,7 @@ def create_article(fixed_data, article_type=None, article_subtype=None):
     price = int(robust_str_entry('Price ($) > '))
     color = robust_str_entry('Color(s) > ', list(fixed_data['compatibility'].keys()))
 
-    return Article(article_type, article_subtype, descr, colors, temp, price)
+    return Article(article_type, article_subtype, descr, colors, temp, price, uuid.uuid4())
 
 def clear_screen():
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", end="")

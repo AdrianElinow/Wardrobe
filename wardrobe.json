@@ -1,6 +1,7 @@
 {
     "headwear": [
         {
+            "oid": "d4c9d751-b53b-4cb3-bdee-e666a80917d4",
             "article_type": "headwear",
             "article_subtype": "beanie",
             "description": "black braille",
@@ -11,6 +12,7 @@
             ]
         },
         {
+            "oid": "918eeb36-78eb-47bc-b81d-77351d99fd81",
             "article_type": "headwear",
             "article_subtype": "beanie",
             "description": "grey carhartt",
@@ -21,6 +23,7 @@
             ]
         },
         {
+            "oid": "1a932399-af4f-4379-b6ca-637aefcc7c69",
             "article_type": "headwear",
             "article_subtype": "ballcap",
             "description": "realtree camo",
@@ -31,6 +34,7 @@
             ]
         },
         {
+            "oid": "69b9e2ed-8cea-40a0-938e-1ae78c0b4a3e",
             "article_type": "headwear",
             "article_subtype": "ballcap",
             "description": "1791 hat",
@@ -41,6 +45,7 @@
             ]
         },
         {
+            "oid": "5ee5ff67-3343-4984-a284-20e874439b1d",
             "article_type": "headwear",
             "article_subtype": "ballcap",
             "description": "'aegis' trucker",
@@ -51,6 +56,7 @@
             ]
         },
         {
+            "oid": "cd701896-44d1-420f-b39f-dd6f4a235172",
             "article_type": "headwear",
             "article_subtype": "ballcap",
             "description": "dark gothic maga",
@@ -61,6 +67,7 @@
             ]
         },
         {
+            "oid": "f3c295f3-7bbd-4027-a86d-aa946f81241d",
             "article_type": "headwear",
             "article_subtype": "ballcap",
             "description": "cthulhu",
@@ -71,6 +78,7 @@
             ]
         },
         {
+            "oid": "cc34fd60-bf25-4425-9bda-bfb7bc0667cc",
             "article_type": "headwear",
             "article_subtype": "ballcap",
             "description": "'web designer'",
@@ -83,6 +91,7 @@
     ],
     "undershirt": [
         {
+            "oid": "a7d36b48-1421-479e-a67a-7519add14ca6",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "nazghul",
@@ -93,6 +102,7 @@
             ]
         },
         {
+            "oid": "52e46faa-ad68-4a6d-99d7-74e2540cc6eb",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "plain tight",
@@ -103,6 +113,7 @@
             ]
         },
         {
+            "oid": "008850e9-e0b2-4e2c-b82d-c090cf9143c8",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "plain",
@@ -113,6 +124,7 @@
             ]
         },
         {
+            "oid": "a66c0d66-9ba4-443b-bae8-d7e7bd8a7870",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "plain fruit-of-the-loom",
@@ -123,6 +135,7 @@
             ]
         },
         {
+            "oid": "256ec79c-0d21-44bb-ab7c-f41b675bb8cc",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "plain",
@@ -133,6 +146,7 @@
             ]
         },
         {
+            "oid": "420d57e2-f336-4b0e-942e-a61a46ffe18a",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "plain arizona v-neck",
@@ -143,6 +157,7 @@
             ]
         },
         {
+            "oid": "9ea379c5-0879-4f42-ac3e-36fbffd0b313",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "white-phosphor sakura",
@@ -153,6 +168,7 @@
             ]
         },
         {
+            "oid": "8de322f7-41c5-4f75-bc8e-e4bac0893b0f",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "cthulhu god",
@@ -163,6 +179,7 @@
             ]
         },
         {
+            "oid": "8de1d553-2b5a-44a5-99ec-bb9e3948825a",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "lovedrafts",
@@ -173,6 +190,7 @@
             ]
         },
         {
+            "oid": "8c644ae3-e5bc-4c16-9cf2-a6c5e8802a4f",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "wendigo(on)",
@@ -183,6 +201,7 @@
             ]
         },
         {
+            "oid": "48555f1a-b682-49d8-8efb-07d8224e1162",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "my first knife-fight",
@@ -193,6 +212,7 @@
             ]
         },
         {
+            "oid": "a9a77eab-ef95-4c13-b8ba-4c39eec4ae4b",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "grunt-style",
@@ -203,6 +223,7 @@
             ]
         },
         {
+            "oid": "b02bf6cd-1f57-4f5b-a958-409f781cede9",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "ghost-in-the-shell tachikoma",
@@ -213,6 +234,7 @@
             ]
         },
         {
+            "oid": "7da57411-156c-45fc-b6ba-37d1cb24d4c5",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "plain loose",
@@ -223,6 +245,7 @@
             ]
         },
         {
+            "oid": "82c3cc5b-53f0-4927-9c20-5025725c6648",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "black-powder-red-earth",
@@ -233,6 +256,7 @@
             ]
         },
         {
+            "oid": "e464a8f2-c878-4937-87b4-0826c9c02612",
             "article_type": "undershirt",
             "article_subtype": "t-shirt",
             "description": "white-phosphor x f/m | goth girls",
@@ -243,6 +267,7 @@
             ]
         },
         {
+            "oid": "43237b3a-5bed-4032-89be-89869a3f4645",
             "article_type": "undershirt",
             "article_subtype": "tanktop",
             "description": "cutoff|2a",
@@ -253,6 +278,7 @@
             ]
         },
         {
+            "oid": "50f265c1-8da6-4550-9c69-1b675340ef5b",
             "article_type": "undershirt",
             "article_subtype": "tanktop",
             "description": "cutoff|cthulhu tanktop",
@@ -263,6 +289,7 @@
             ]
         },
         {
+            "oid": "3ac4c7c3-4832-4ce3-8cca-3af75658282b",
             "article_type": "undershirt",
             "article_subtype": "tanktop",
             "description": "cutoff|cutoff",
@@ -273,6 +300,7 @@
             ]
         },
         {
+            "oid": "23dc029d-8ab0-43ec-a02f-721e101ab955",
             "article_type": "undershirt",
             "article_subtype": "tanktop",
             "description": "cutoff|plain black tanktop",
@@ -283,6 +311,7 @@
             ]
         },
         {
+            "oid": "94f274eb-f1d6-48b5-b252-6f50e98b297e",
             "article_type": "undershirt",
             "article_subtype": "tanktop",
             "description": "cutoff|anime girl cutoff",
@@ -293,6 +322,7 @@
             ]
         },
         {
+            "oid": "a18b7d98-bf5c-4883-94f0-ba6e806220fa",
             "article_type": "undershirt",
             "article_subtype": "longsleeve",
             "description": "yuengling",
@@ -303,6 +333,7 @@
             ]
         },
         {
+            "oid": "0e52b045-134c-4412-bcea-d2759d9b6a29",
             "article_type": "undershirt",
             "article_subtype": "longsleeve",
             "description": "turtleneck",
@@ -313,6 +344,7 @@
             ]
         },
         {
+            "oid": "d87a2b96-8ba0-429b-971e-90ed186f90b5",
             "article_type": "undershirt",
             "article_subtype": "longsleeve",
             "description": "hounds-tooth turtleneck",
@@ -323,6 +355,7 @@
             ]
         },
         {
+            "oid": "648c4c92-de31-42a1-91a7-ef48a2e3cbfd",
             "article_type": "undershirt",
             "article_subtype": "thermal",
             "description": "devops compression shirt",
@@ -333,6 +366,7 @@
             ]
         },
         {
+            "oid": "ff36ec52-9a28-41e4-872f-a2402c444ae5",
             "article_type": "undershirt",
             "article_subtype": "thermal",
             "description": "devops compression shirt",
@@ -343,6 +377,7 @@
             ]
         },
         {
+            "oid": "211c61d6-c24b-42cd-93e7-c6c8e79ba90f",
             "article_type": "undershirt",
             "article_subtype": "thermal",
             "description": "waffle-top",
@@ -353,6 +388,7 @@
             ]
         },
         {
+            "oid": "abe9dd4f-7641-4794-8cb9-df11e097cd94",
             "article_type": "undershirt",
             "article_subtype": "thermal",
             "description": "waffle-top",
@@ -363,6 +399,7 @@
             ]
         },
         {
+            "oid": "7a75ace1-80df-493d-99f3-4b11955ee2c4",
             "article_type": "undershirt",
             "article_subtype": "thermal",
             "description": "waffle-top",
@@ -375,6 +412,7 @@
     ],
     "overshirt": [
         {
+            "oid": "24dd659a-2d20-42da-bee7-6e745a4df0a8",
             "article_type": "overshirt",
             "article_subtype": "flannel",
             "description": "",
@@ -385,6 +423,7 @@
             ]
         },
         {
+            "oid": "a1d0bef4-6b3a-4872-8d76-940177276f76",
             "article_type": "overshirt",
             "article_subtype": "flannel",
             "description": "denim shirt",
@@ -395,6 +434,7 @@
             ]
         },
         {
+            "oid": "6b43ea7d-cdd6-4f99-a972-44994bedfb6b",
             "article_type": "overshirt",
             "article_subtype": "flannel",
             "description": "&blue flannel",
@@ -405,6 +445,7 @@
             ]
         },
         {
+            "oid": "19c9b3bb-af2a-4557-a799-7ffc0adc362a",
             "article_type": "overshirt",
             "article_subtype": "flannel",
             "description": "&blue button-down",
@@ -415,6 +456,7 @@
             ]
         },
         {
+            "oid": "0b2e042f-188d-4295-854e-5f2db19a778e",
             "article_type": "overshirt",
             "article_subtype": "flannel",
             "description": "worn flannel",
@@ -425,6 +467,7 @@
             ]
         },
         {
+            "oid": "f728b482-177c-427c-aa25-3d2f60f8ff5e",
             "article_type": "overshirt",
             "article_subtype": "flannel",
             "description": "",
@@ -435,6 +478,7 @@
             ]
         },
         {
+            "oid": "a2d1b9f5-c01c-499c-afb6-36dd7b037e21",
             "article_type": "overshirt",
             "article_subtype": "flannel",
             "description": "mechanics button-down",
@@ -445,6 +489,7 @@
             ]
         },
         {
+            "oid": "8a1270f9-6a27-4845-beea-24016ba2c846",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "white-phosphor occult",
@@ -455,6 +500,7 @@
             ]
         },
         {
+            "oid": "37569ad9-1fd3-42c3-a630-3d219d5a111e",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "mit",
@@ -465,6 +511,7 @@
             ]
         },
         {
+            "oid": "2833f50e-9edd-4d26-8e9a-0affc094b9d1",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "burgundy weilers",
@@ -475,6 +522,7 @@
             ]
         },
         {
+            "oid": "add60d17-f6fe-457e-bcd9-39c75504e95e",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "amira elfeky",
@@ -485,6 +533,7 @@
             ]
         },
         {
+            "oid": "1d0bf721-c8a7-423a-a31d-eed655de0e46",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "patchwork eyes",
@@ -495,6 +544,7 @@
             ]
         },
         {
+            "oid": "d750ba90-10ee-4815-a608-29866e0face7",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "byanymeansnecessary",
@@ -505,6 +555,7 @@
             ]
         },
         {
+            "oid": "ba16c162-77b3-4c26-a934-c78fb920809d",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "'not today' kitty",
@@ -515,6 +566,7 @@
             ]
         },
         {
+            "oid": "5f337911-c306-4e89-9541-336f6a496422",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "rooftop voter",
@@ -525,6 +577,7 @@
             ]
         },
         {
+            "oid": "b1f21c5f-1821-4eb9-a90a-0391d7057502",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "white-phosphor x f/m 'david'",
@@ -535,6 +588,7 @@
             ]
         },
         {
+            "oid": "94e245d5-f720-4dd8-a230-9f725776d310",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "memento-mori",
@@ -545,6 +599,7 @@
             ]
         },
         {
+            "oid": "b033daec-d2f7-40eb-a5e6-1724fdd75f78",
             "article_type": "overshirt",
             "article_subtype": "hoodie",
             "description": "odst",
@@ -555,6 +610,7 @@
             ]
         },
         {
+            "oid": "11f88899-bb39-4175-b91d-22f7f1327312",
             "article_type": "overshirt",
             "article_subtype": "sweater",
             "description": "turtleneck",
@@ -565,6 +621,7 @@
             ]
         },
         {
+            "oid": "bdaec9ff-f2a1-4d6c-8712-f9d9b64264f1",
             "article_type": "overshirt",
             "article_subtype": "sweater",
             "description": "longsleeve stitches",
@@ -575,6 +632,7 @@
             ]
         },
         {
+            "oid": "22fddb59-fb4d-4f69-80ee-0830151cb27c",
             "article_type": "overshirt",
             "article_subtype": "sweater",
             "description": "",
@@ -585,6 +643,7 @@
             ]
         },
         {
+            "oid": "d8ad5cd3-b9f4-4ac0-9363-9721ffc9b69a",
             "article_type": "overshirt",
             "article_subtype": "sweater",
             "description": "cable-knit fishermans",
@@ -595,6 +654,7 @@
             ]
         },
         {
+            "oid": "5dfbe292-fe65-4b41-9e0b-3833344ad636",
             "article_type": "overshirt",
             "article_subtype": "sweater",
             "description": "crew-neck",
@@ -605,6 +665,7 @@
             ]
         },
         {
+            "oid": "d8f9c459-7f25-4068-8aa9-ce00a7106698",
             "article_type": "overshirt",
             "article_subtype": "sweater",
             "description": "cable-knit turtleneck",
@@ -615,6 +676,7 @@
             ]
         },
         {
+            "oid": "c6660c87-27b2-4cdc-9a98-a183c7ae9a8a",
             "article_type": "overshirt",
             "article_subtype": "sweater",
             "description": "quarter-zip",
@@ -625,6 +687,7 @@
             ]
         },
         {
+            "oid": "ecf8769f-219a-42de-bf47-125db4dc3d7c",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "electric-blue button-up",
@@ -635,6 +698,7 @@
             ]
         },
         {
+            "oid": "448d6b7f-9e7c-42c0-be5d-8829e764563c",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "dotted button-up",
@@ -645,6 +709,7 @@
             ]
         },
         {
+            "oid": "527b2465-c416-4aaa-80f1-e75fefefef3c",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "burgundy-lined button-up",
@@ -655,6 +720,7 @@
             ]
         },
         {
+            "oid": "9d09416d-7020-480c-8851-c679aaa5bb8e",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "dotted button-up",
@@ -665,6 +731,7 @@
             ]
         },
         {
+            "oid": "94d93d67-be0f-48ae-80a5-b05c4f8c799a",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "dark-blue-lined button-up",
@@ -675,6 +742,7 @@
             ]
         },
         {
+            "oid": "a9604bae-39e5-4ba4-9c15-19e1277af441",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "button-up",
@@ -685,6 +753,7 @@
             ]
         },
         {
+            "oid": "315fbe7c-bcb2-4b45-b2cf-234e6ac87ca4",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "cotton button-up",
@@ -695,6 +764,7 @@
             ]
         },
         {
+            "oid": "80695870-de06-413f-ae5e-90f80cdedd2e",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "s&l button-up",
@@ -705,6 +775,7 @@
             ]
         },
         {
+            "oid": "27e7cd4c-a844-4ba1-9ad8-06af5aec24a1",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "loose button-up",
@@ -715,6 +786,7 @@
             ]
         },
         {
+            "oid": "28f9850c-75c2-470a-a335-1ed64089ceed",
             "article_type": "overshirt",
             "article_subtype": "oxford",
             "description": "light-blue-lined button-up",
@@ -725,6 +797,7 @@
             ]
         },
         {
+            "oid": "7c8f7d6e-d694-46e9-8bfc-3875f6ab0752",
             "article_type": "overshirt",
             "article_subtype": "zip-up",
             "description": "adidas track-jacket",
@@ -735,6 +808,7 @@
             ]
         },
         {
+            "oid": "924aa2bd-d791-435a-a346-6f9183315a5d",
             "article_type": "overshirt",
             "article_subtype": "zip-up",
             "description": "fleece",
@@ -747,6 +821,7 @@
     ],
     "outerwear": [
         {
+            "oid": "ff78fd9c-5e9f-4731-8d05-6338fcd3dd04",
             "article_type": "outerwear",
             "article_subtype": "coat",
             "description": "wool",
@@ -757,6 +832,7 @@
             ]
         },
         {
+            "oid": "59ebee65-2347-42f1-9e29-9c9ca7aa9104",
             "article_type": "outerwear",
             "article_subtype": "coat",
             "description": "slim single-breasted",
@@ -767,6 +843,7 @@
             ]
         },
         {
+            "oid": "eb53e864-90b3-4f7a-a1ed-f47dac47628a",
             "article_type": "outerwear",
             "article_subtype": "jacket",
             "description": "thursday motorcycle",
@@ -777,6 +854,7 @@
             ]
         },
         {
+            "oid": "9167ca92-34c9-4016-aa3d-a7c8f4fc35f5",
             "article_type": "outerwear",
             "article_subtype": "jacket",
             "description": "denim sherpa",
@@ -787,6 +865,7 @@
             ]
         },
         {
+            "oid": "419e7ebb-b6e6-43d2-9990-56684377f83a",
             "article_type": "outerwear",
             "article_subtype": "jacket",
             "description": "leather af",
@@ -797,6 +876,7 @@
             ]
         },
         {
+            "oid": "453d78b9-5ecc-4d81-8b6e-2d2792071849",
             "article_type": "outerwear",
             "article_subtype": "jacket",
             "description": "multicam gore-tex shell",
@@ -809,6 +889,7 @@
     ],
     "pants": [
         {
+            "oid": "fc858371-3e0f-4978-88d2-6d27d3858fc0",
             "article_type": "pants",
             "article_subtype": "jeans",
             "description": "levi's denizens",
@@ -819,6 +900,7 @@
             ]
         },
         {
+            "oid": "c091580a-3991-40d2-92bd-942b7d23f224",
             "article_type": "pants",
             "article_subtype": "jeans",
             "description": "sun co. jeans",
@@ -829,6 +911,7 @@
             ]
         },
         {
+            "oid": "628a1b4f-6dcd-4155-920c-eb53d403da54",
             "article_type": "pants",
             "article_subtype": "jeans",
             "description": "viktos operator",
@@ -839,6 +922,7 @@
             ]
         },
         {
+            "oid": "c3d79d95-1b39-4df5-92b9-d5da66fed189",
             "article_type": "pants",
             "article_subtype": "jeans",
             "description": "wide-leg",
@@ -849,6 +933,7 @@
             ]
         },
         {
+            "oid": "71a1019f-e483-478f-9a88-16ee3ca3e14f",
             "article_type": "pants",
             "article_subtype": "jeans",
             "description": "skinny",
@@ -859,6 +944,7 @@
             ]
         },
         {
+            "oid": "0607a5f6-b46c-4ed6-98be-7fc40fe97b9e",
             "article_type": "pants",
             "article_subtype": "jeans",
             "description": "skinny",
@@ -869,6 +955,7 @@
             ]
         },
         {
+            "oid": "3f8587cd-d021-48e7-b6ee-e552167ca0e3",
             "article_type": "pants",
             "article_subtype": "jeans",
             "description": "skinny",
@@ -879,6 +966,7 @@
             ]
         },
         {
+            "oid": "abe5ccf3-8820-43fe-a23d-55bef549c218",
             "article_type": "pants",
             "article_subtype": "jeans",
             "description": "skinny",
@@ -889,6 +977,7 @@
             ]
         },
         {
+            "oid": "43eb612e-5ce2-4d96-a7b5-718deacf3763",
             "article_type": "pants",
             "article_subtype": "chinos",
             "description": "'ultimate'",
@@ -899,6 +988,7 @@
             ]
         },
         {
+            "oid": "41fdec7b-785a-4985-9234-f54d073c6c00",
             "article_type": "pants",
             "article_subtype": "chinos",
             "description": "'ultimate'",
@@ -909,6 +999,7 @@
             ]
         },
         {
+            "oid": "63ba105c-6a8e-427c-b820-4a6a60997512",
             "article_type": "pants",
             "article_subtype": "chinos",
             "description": "'ultimate'",
@@ -919,6 +1010,7 @@
             ]
         },
         {
+            "oid": "14e81ac1-26b7-40e5-8094-e9162b785a4a",
             "article_type": "pants",
             "article_subtype": "chinos",
             "description": "'ultimate'",
@@ -929,6 +1021,7 @@
             ]
         },
         {
+            "oid": "8247b530-01ff-4c81-a070-f251175343de",
             "article_type": "pants",
             "article_subtype": "chinos",
             "description": "'ultimate'",
@@ -939,6 +1032,7 @@
             ]
         },
         {
+            "oid": "c3c5be05-a15d-4580-ac6f-e0387b2442d0",
             "article_type": "pants",
             "article_subtype": "chinos",
             "description": "amazon",
@@ -949,6 +1043,7 @@
             ]
         },
         {
+            "oid": "1f71075c-3304-4fd4-88ae-bb9eb693e9d9",
             "article_type": "pants",
             "article_subtype": "shorts",
             "description": "chino",
@@ -959,6 +1054,7 @@
             ]
         },
         {
+            "oid": "31fece34-31c0-4a93-9142-004b77e53b89",
             "article_type": "pants",
             "article_subtype": "shorts",
             "description": "black youngla",
@@ -969,6 +1065,7 @@
             ]
         },
         {
+            "oid": "40d0a974-5471-43af-9e52-0e58c2b475da",
             "article_type": "pants",
             "article_subtype": "shorts",
             "description": "orange gymreapers",
@@ -979,6 +1076,7 @@
             ]
         },
         {
+            "oid": "d70633d2-293c-4f66-9ee0-c8f3bc5b9114",
             "article_type": "pants",
             "article_subtype": "shorts",
             "description": "amazon",
@@ -989,6 +1087,7 @@
             ]
         },
         {
+            "oid": "140f9a94-c3e4-4eac-bbb9-6902939ee72a",
             "article_type": "pants",
             "article_subtype": "shorts",
             "description": "short",
@@ -999,6 +1098,7 @@
             ]
         },
         {
+            "oid": "e1f27697-c7fe-4dfe-8778-504e66a621c2",
             "article_type": "pants",
             "article_subtype": "sweatpants",
             "description": "blackout adidas track",
@@ -1009,6 +1109,7 @@
             ]
         },
         {
+            "oid": "a28a20bf-25a8-4c80-907b-45487fb684ad",
             "article_type": "pants",
             "article_subtype": "sweatpants",
             "description": "adidas track",
@@ -1019,6 +1120,7 @@
             ]
         },
         {
+            "oid": "0cc05527-2711-4af3-82d3-b97295af2bf2",
             "article_type": "pants",
             "article_subtype": "sweatpants",
             "description": "adidas track",
@@ -1029,6 +1131,7 @@
             ]
         },
         {
+            "oid": "690ac845-242c-44e8-953d-0896de5c22ec",
             "article_type": "pants",
             "article_subtype": "sweatpants",
             "description": "loose adidas track",
@@ -1039,6 +1142,7 @@
             ]
         },
         {
+            "oid": "94f29d92-796f-4a40-a8d0-49797f7664f0",
             "article_type": "pants",
             "article_subtype": "sweatpants",
             "description": "adidas track",
@@ -1049,6 +1153,7 @@
             ]
         },
         {
+            "oid": "816a85fc-75ef-4da2-a8d0-dc2ab2f3d7da",
             "article_type": "pants",
             "article_subtype": "sweatpants",
             "description": "skinny jogger",
@@ -1059,6 +1164,7 @@
             ]
         },
         {
+            "oid": "39969bfb-ddf9-4466-8f52-a7391eb41203",
             "article_type": "pants",
             "article_subtype": "sweatpants",
             "description": "skinny jogger",
@@ -1071,6 +1177,7 @@
     ],
     "accessory": [
         {
+            "oid": "321799d4-3761-4519-bec5-5df9ca59eecc",
             "article_type": "accessory",
             "article_subtype": "gloves",
             "description": "leather driving gloves",
@@ -1081,6 +1188,7 @@
             ]
         },
         {
+            "oid": "159ed333-7f22-4350-8f77-adcc04dce3b9",
             "article_type": "accessory",
             "article_subtype": "bag",
             "description": "helikon-tex sling",
@@ -1091,6 +1199,7 @@
             ]
         },
         {
+            "oid": "a465fa66-5aca-4b8e-b1f4-8ce66bee0564",
             "article_type": "accessory",
             "article_subtype": "bag",
             "description": "vertx backpack",
@@ -1101,6 +1210,7 @@
             ]
         },
         {
+            "oid": "a53e0419-2146-45d0-8649-074d463a3f38",
             "article_type": "accessory",
             "article_subtype": "bag",
             "description": "leather viktos ccw sling",
@@ -1111,6 +1221,7 @@
             ]
         },
         {
+            "oid": "13603300-cbfa-446c-b3f1-27b07fa7f79f",
             "article_type": "accessory",
             "article_subtype": "bag",
             "description": "leather lv duffle",
@@ -1121,6 +1232,7 @@
             ]
         },
         {
+            "oid": "e9c6035b-8b78-418c-9ff2-eec5f47aa817",
             "article_type": "accessory",
             "article_subtype": "bag",
             "description": "checkered lv sling",
@@ -1131,6 +1243,7 @@
             ]
         },
         {
+            "oid": "64e8bcb6-7ff0-4aa1-8e03-ec0e99a4be14",
             "article_type": "accessory",
             "article_subtype": "bag",
             "description": "checkered lv satchel",
@@ -1141,6 +1254,7 @@
             ]
         },
         {
+            "oid": "b5e2d610-dd49-4133-9f64-72af46b707b7",
             "article_type": "accessory",
             "article_subtype": "mask",
             "description": "cryptic nine",
@@ -1151,6 +1265,7 @@
             ]
         },
         {
+            "oid": "4a7d2294-8f4b-49f4-9772-ac98f1623787",
             "article_type": "accessory",
             "article_subtype": "mask",
             "description": "3-hole ski-mask",
@@ -1161,6 +1276,7 @@
             ]
         },
         {
+            "oid": "26df3b29-ca9f-403d-a216-c5c14068f881",
             "article_type": "accessory",
             "article_subtype": "headphones",
             "description": "sony wx5-1000",
@@ -1171,6 +1287,7 @@
             ]
         },
         {
+            "oid": "7f9633e5-bb3c-475a-b731-f7ed0cfd6f6a",
             "article_type": "accessory",
             "article_subtype": "headphones",
             "description": "apple wired earbuds",
@@ -1181,6 +1298,7 @@
             ]
         },
         {
+            "oid": "dea15e73-fde2-4e83-a960-2d701358454f",
             "article_type": "accessory",
             "article_subtype": "belt",
             "description": "leather",
@@ -1191,6 +1309,7 @@
             ]
         },
         {
+            "oid": "2171d9f2-bcc5-40c1-a0eb-abe498c88d43",
             "article_type": "accessory",
             "article_subtype": "belt",
             "description": "leather",
@@ -1201,6 +1320,7 @@
             ]
         },
         {
+            "oid": "dea112fa-ac81-4060-9e60-a5fbf7922158",
             "article_type": "accessory",
             "article_subtype": "belt",
             "description": "ccw",
@@ -1211,6 +1331,7 @@
             ]
         },
         {
+            "oid": "69493b4d-5cac-415a-b2a7-acfa2f822e69",
             "article_type": "accessory",
             "article_subtype": "belt",
             "description": "fabric",
@@ -1221,6 +1342,7 @@
             ]
         },
         {
+            "oid": "6e2dc971-4189-45b2-b0a0-c634e1e8bc6e",
             "article_type": "accessory",
             "article_subtype": "watch",
             "description": "fossil watch",
@@ -1231,6 +1353,7 @@
             ]
         },
         {
+            "oid": "c2e41b64-3464-4a80-a7dd-3086e274b6bc",
             "article_type": "accessory",
             "article_subtype": "bracelet",
             "description": "chrome-hearts alternating",
@@ -1241,6 +1364,7 @@
             ]
         },
         {
+            "oid": "b305e679-ca0f-4947-8c6a-25635620cbd8",
             "article_type": "accessory",
             "article_subtype": "bracelet",
             "description": "project-comte",
@@ -1251,6 +1375,7 @@
             ]
         },
         {
+            "oid": "acc0641c-8788-4666-9239-0c7bfd7a5335",
             "article_type": "accessory",
             "article_subtype": "bracelet",
             "description": "hoop&chain",
@@ -1261,6 +1386,7 @@
             ]
         },
         {
+            "oid": "c7e22046-3d9a-4ed0-ae6f-21d91dc82f12",
             "article_type": "accessory",
             "article_subtype": "necklace",
             "description": "chrome-hearts crosses pendant necklace",
@@ -1271,6 +1397,7 @@
             ]
         },
         {
+            "oid": "3c5828f4-fafc-40b2-9316-3c8ac0ab2d80",
             "article_type": "accessory",
             "article_subtype": "necklace",
             "description": "simple chain",
@@ -1281,6 +1408,7 @@
             ]
         },
         {
+            "oid": "bf6ae8bc-3a66-43da-840f-2eef9114041d",
             "article_type": "accessory",
             "article_subtype": "necklace",
             "description": "hanlon's razor",
@@ -1291,6 +1419,7 @@
             ]
         },
         {
+            "oid": "0e508253-98ca-4350-9055-08125dac5aa9",
             "article_type": "accessory",
             "article_subtype": "necklace",
             "description": "personal fears raptor-chain",
@@ -1301,6 +1430,7 @@
             ]
         },
         {
+            "oid": "d3355fbd-96e6-4533-ac0f-377ccbb2dc56",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "project-comte statement ring",
@@ -1311,6 +1441,7 @@
             ]
         },
         {
+            "oid": "832f3db7-3258-40bf-ab6e-f2053834ce7f",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "personal-fears ribcage",
@@ -1321,6 +1452,7 @@
             ]
         },
         {
+            "oid": "5a885e59-a666-411d-9132-47d791a86c88",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "personal-fears twin-skull",
@@ -1331,6 +1463,7 @@
             ]
         },
         {
+            "oid": "df928ab0-9d38-4cad-a545-76b94b58716d",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "7-sided honeycomb",
@@ -1341,6 +1474,7 @@
             ]
         },
         {
+            "oid": "9291e2ae-cbdf-446b-8416-d9d1fd5db694",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "chipped chasm",
@@ -1351,6 +1485,7 @@
             ]
         },
         {
+            "oid": "4a754eda-2c3c-48bc-b1c7-382a39ff43c9",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "promises-made",
@@ -1361,6 +1496,7 @@
             ]
         },
         {
+            "oid": "ed269a1a-0274-44d0-9a84-8ce2f1b0b0ab",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "personal fears sludge",
@@ -1371,6 +1507,7 @@
             ]
         },
         {
+            "oid": "d011fb49-1c1e-4786-9a0b-a490a00125be",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "blacksmith",
@@ -1381,6 +1518,7 @@
             ]
         },
         {
+            "oid": "576f8094-1c04-4a2f-b645-31e3e5305f65",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "scored",
@@ -1391,6 +1529,7 @@
             ]
         },
         {
+            "oid": "de1a0f15-bfbe-4a76-bc93-7a3ad8def32f",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "little flat",
@@ -1401,6 +1540,7 @@
             ]
         },
         {
+            "oid": "7a72f928-7c34-4b7f-b5f7-4b9f422ada86",
             "article_type": "accessory",
             "article_subtype": "ring",
             "description": "silicone",
@@ -1411,6 +1551,7 @@
             ]
         },
         {
+            "oid": "fe76c0bc-6397-4221-885b-44c7d6016e75",
             "article_type": "accessory",
             "article_subtype": "glasses",
             "description": "pit vipers - ballistic",
@@ -1421,6 +1562,7 @@
             ]
         },
         {
+            "oid": "05771319-fa5d-49d9-a150-a158c457c4c5",
             "article_type": "accessory",
             "article_subtype": "glasses",
             "description": "pit vipers - black",
@@ -1431,6 +1573,7 @@
             ]
         },
         {
+            "oid": "b7d9d9e9-ff8d-4270-b7dc-7e332152fabb",
             "article_type": "accessory",
             "article_subtype": "glasses",
             "description": "pit vipers - blue/green",
@@ -1441,6 +1584,7 @@
             ]
         },
         {
+            "oid": "54b27b51-72a5-431b-bb99-42536912d507",
             "article_type": "accessory",
             "article_subtype": "glasses",
             "description": "pit vipers - white/pink 'miami'",
@@ -1453,6 +1597,7 @@
     ],
     "footwear": [
         {
+            "oid": "e4c0fb8f-f164-461b-93fc-0f1eebcb58ac",
             "article_type": "footwear",
             "article_subtype": "dress-shoes",
             "description": "thursday",
@@ -1463,6 +1608,7 @@
             ]
         },
         {
+            "oid": "bc1a3ddb-b93f-4706-8445-fd4066d57e9c",
             "article_type": "footwear",
             "article_subtype": "boots",
             "description": "thursday zip-up",
@@ -1473,6 +1619,7 @@
             ]
         },
         {
+            "oid": "adce1b5b-8f36-4510-bd5f-80aa7e5d4bbe",
             "article_type": "footwear",
             "article_subtype": "boots",
             "description": "thursday lace-up",
@@ -1483,6 +1630,7 @@
             ]
         },
         {
+            "oid": "dff903e6-5517-413b-8174-6e864b5e7303",
             "article_type": "footwear",
             "article_subtype": "boots",
             "description": "thursday jhodpurs",
@@ -1493,6 +1641,7 @@
             ]
         },
         {
+            "oid": "c20ffd27-9b08-428d-b188-01804c162bd2",
             "article_type": "footwear",
             "article_subtype": "boots",
             "description": "thoroughgood moc-toe",
@@ -1503,6 +1652,7 @@
             ]
         },
         {
+            "oid": "05ead9ae-9540-444f-b125-1d20dde704a9",
             "article_type": "footwear",
             "article_subtype": "sneakers",
             "description": "converse",
@@ -1513,6 +1663,7 @@
             ]
         },
         {
+            "oid": "ad45a16f-7703-4343-9137-49999171c6ec",
             "article_type": "footwear",
             "article_subtype": "boots",
             "description": "timberlands",
@@ -1523,6 +1674,7 @@
             ]
         },
         {
+            "oid": "163625e7-831b-4886-85e5-43c74d60878d",
             "article_type": "footwear",
             "article_subtype": "boots",
             "description": "redwing moc-toe",
@@ -1533,6 +1685,7 @@
             ]
         },
         {
+            "oid": "a501a930-e7ad-4b67-9123-27653f1eb749",
             "article_type": "footwear",
             "article_subtype": "slippers",
             "description": "plush moccassin",
@@ -1543,6 +1696,7 @@
             ]
         },
         {
+            "oid": "f72ba355-a348-4655-8b23-34b901f736af",
             "article_type": "footwear",
             "article_subtype": "boots",
             "description": "merrel hiking",
@@ -1555,76 +1709,1366 @@
     ],
     "outfit_history": [
         {
-            "headwear": {
-                "article_type": "headwear",
-                "article_subtype": "beanie",
-                "description": "grey carhartt",
-                "weather": "any",
-                "price": 0,
-                "colors": [
-                    "grey"
-                ]
-            },
-            "undershirt": {
-                "article_type": "undershirt",
-                "article_subtype": "tanktop",
-                "description": "cutoff|anime girl cutoff",
-                "weather": "any",
-                "price": 0,
-                "colors": [
-                    "black"
-                ]
-            },
-            "overshirt": {
-                "article_type": "overshirt",
-                "article_subtype": "oxford",
-                "description": "loose button-up",
-                "weather": "any",
-                "price": 0,
-                "colors": [
-                    "white"
-                ]
-            },
-            "outerwear": {
-                "article_type": "outerwear",
-                "article_subtype": "coat",
-                "description": "wool",
-                "weather": "any",
-                "price": 300,
-                "colors": [
-                    "black"
-                ]
-            },
-            "pants": {
-                "article_type": "pants",
-                "article_subtype": "chinos",
-                "description": "'ultimate'",
-                "weather": "any",
-                "price": 0,
-                "colors": [
-                    "black"
-                ]
-            },
-            "footwear": {
-                "article_type": "footwear",
-                "article_subtype": "dress-shoes",
-                "description": "thursday",
-                "weather": "any",
-                "price": 200,
-                "colors": [
-                    "black"
-                ]
-            },
-            "accessory": {
-                "article_type": "accessory",
-                "article_subtype": "bag",
-                "description": "leather lv duffle",
-                "weather": "any",
-                "price": 0,
-                "colors": [
-                    "black"
-                ]
-            }
+            "headwear": [
+                {
+                    "oid": "cab25e15-7fab-45ed-a49e-349d73acb0d1",
+                    "article_type": "headwear",
+                    "article_subtype": "beanie",
+                    "description": "grey carhartt",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "undershirt": [
+                {
+                    "oid": "927e5e8a-1d30-4c6f-9ca7-10e09765ffa0",
+                    "article_type": "undershirt",
+                    "article_subtype": "tanktop",
+                    "description": "cutoff|anime girl cutoff",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "overshirt": [
+                {
+                    "oid": "c9ca4217-881c-4f24-821a-b50ceaaa0ecd",
+                    "article_type": "overshirt",
+                    "article_subtype": "oxford",
+                    "description": "loose button-up",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "white"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "8e977ed6-9f6b-4e56-8d0b-8fafdfd7c46b",
+                    "article_type": "outerwear",
+                    "article_subtype": "coat",
+                    "description": "wool",
+                    "weather": "any",
+                    "price": 300,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "ed0f9999-fa0f-4e46-96e1-9e4f41e1bffc",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "'ultimate'",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "c0cf554b-6e9b-43de-b3d7-1ce649a0b6b4",
+                    "article_type": "footwear",
+                    "article_subtype": "dress-shoes",
+                    "description": "thursday",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "accessory": [
+                {
+                    "oid": "8ee61aa6-4995-41d2-9cec-ce37951391cc",
+                    "article_type": "accessory",
+                    "article_subtype": "bag",
+                    "description": "leather lv duffle",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "oid": "67e3d68e-d114-11ef-98fb-8a58dd7c4fa7"
+        },
+        {
+            "overshirt": [
+                {
+                    "oid": "11f88899-bb39-4175-b91d-22f7f1327312",
+                    "article_type": "overshirt",
+                    "article_subtype": "sweater",
+                    "description": "turtleneck",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "dark-blue"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "ff78fd9c-5e9f-4731-8d05-6338fcd3dd04",
+                    "article_type": "outerwear",
+                    "article_subtype": "coat",
+                    "description": "wool",
+                    "weather": "any",
+                    "price": 300,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "43eb612e-5ce2-4d96-a7b5-718deacf3763",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "'ultimate'",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "e4c0fb8f-f164-461b-93fc-0f1eebcb58ac",
+                    "article_type": "footwear",
+                    "article_subtype": "dress-shoes",
+                    "description": "thursday",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "oid": "f90491fa-4ca7-449f-9560-f624a1af8997"
+        },
+        {
+            "headwear": [
+                {
+                    "oid": "918eeb36-78eb-47bc-b81d-77351d99fd81",
+                    "article_type": "headwear",
+                    "article_subtype": "beanie",
+                    "description": "grey carhartt",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "undershirt": [
+                {
+                    "oid": "211c61d6-c24b-42cd-93e7-c6c8e79ba90f",
+                    "article_type": "undershirt",
+                    "article_subtype": "thermal",
+                    "description": "waffle-top",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "overshirt": [
+                {
+                    "oid": "924aa2bd-d791-435a-a346-6f9183315a5d",
+                    "article_type": "overshirt",
+                    "article_subtype": "zip-up",
+                    "description": "fleece",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "419e7ebb-b6e6-43d2-9990-56684377f83a",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "leather af",
+                    "weather": "any",
+                    "price": 400,
+                    "colors": [
+                        "brown"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "94f29d92-796f-4a40-a8d0-49797f7664f0",
+                    "article_type": "pants",
+                    "article_subtype": "sweatpants",
+                    "description": "adidas track",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "05ead9ae-9540-444f-b125-1d20dde704a9",
+                    "article_type": "footwear",
+                    "article_subtype": "sneakers",
+                    "description": "converse",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "oid": "aaf50d16-50fb-4c09-83c9-0c4bd27fcc46"
+        },
+        {
+            "headwear": [
+                {
+                    "oid": "918eeb36-78eb-47bc-b81d-77351d99fd81",
+                    "article_type": "headwear",
+                    "article_subtype": "beanie",
+                    "description": "grey carhartt",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "undershirt": [
+                {
+                    "oid": "648c4c92-de31-42a1-91a7-ef48a2e3cbfd",
+                    "article_type": "undershirt",
+                    "article_subtype": "thermal",
+                    "description": "devops compression shirt",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "overshirt": [
+                {
+                    "oid": "924aa2bd-d791-435a-a346-6f9183315a5d",
+                    "article_type": "overshirt",
+                    "article_subtype": "zip-up",
+                    "description": "fleece",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "453d78b9-5ecc-4d81-8b6e-2d2792071849",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "multicam gore-tex shell",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "camouflage"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "0cc05527-2711-4af3-82d3-b97295af2bf2",
+                    "article_type": "pants",
+                    "article_subtype": "sweatpants",
+                    "description": "adidas track",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "a501a930-e7ad-4b67-9123-27653f1eb749",
+                    "article_type": "footwear",
+                    "article_subtype": "slippers",
+                    "description": "plush moccassin",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "oid": "39f61785-933c-4ced-8add-ab9741200385"
+        },
+        {
+            "overshirt": [
+                {
+                    "oid": "448d6b7f-9e7c-42c0-be5d-8829e764563c",
+                    "article_type": "overshirt",
+                    "article_subtype": "oxford",
+                    "description": "dotted button-up",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "dark-blue"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "453d78b9-5ecc-4d81-8b6e-2d2792071849",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "multicam gore-tex shell",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "camouflage"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "63ba105c-6a8e-427c-b820-4a6a60997512",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "'ultimate'",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "e4c0fb8f-f164-461b-93fc-0f1eebcb58ac",
+                    "article_type": "footwear",
+                    "article_subtype": "dress-shoes",
+                    "description": "thursday",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "oid": "2e71b981-c198-4cfb-92aa-6b0c9d41ffd8"
+        },
+        {
+            "overshirt": [
+                {
+                    "oid": "315fbe7c-bcb2-4b45-b2cf-234e6ac87ca4",
+                    "article_type": "overshirt",
+                    "article_subtype": "oxford",
+                    "description": "cotton button-up",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "9167ca92-34c9-4016-aa3d-a7c8f4fc35f5",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "denim sherpa",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "blue"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "c3c5be05-a15d-4580-ac6f-e0387b2442d0",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "amazon",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "beige"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "e4c0fb8f-f164-461b-93fc-0f1eebcb58ac",
+                    "article_type": "footwear",
+                    "article_subtype": "dress-shoes",
+                    "description": "thursday",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "oid": "12a99199-bb5b-4e23-a071-94bd8900447c"
+        },
+        {
+            "overshirt": [
+                {
+                    "oid": "22fddb59-fb4d-4f69-80ee-0830151cb27c",
+                    "article_type": "overshirt",
+                    "article_subtype": "sweater",
+                    "description": "",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "red"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "ff78fd9c-5e9f-4731-8d05-6338fcd3dd04",
+                    "article_type": "outerwear",
+                    "article_subtype": "coat",
+                    "description": "wool",
+                    "weather": "any",
+                    "price": 300,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "63ba105c-6a8e-427c-b820-4a6a60997512",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "'ultimate'",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "e4c0fb8f-f164-461b-93fc-0f1eebcb58ac",
+                    "article_type": "footwear",
+                    "article_subtype": "dress-shoes",
+                    "description": "thursday",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "oid": "8556e217-b7b2-4157-b609-6f1b9a095888"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "f728b482-177c-427c-aa25-3d2f60f8ff5e",
+                    "article_type": "overshirt",
+                    "article_subtype": "flannel",
+                    "description": "",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "red"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "eb53e864-90b3-4f7a-a1ed-f47dac47628a",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "thursday motorcycle",
+                    "weather": "any",
+                    "price": 400,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "c3d79d95-1b39-4df5-92b9-d5da66fed189",
+                    "article_type": "pants",
+                    "article_subtype": "jeans",
+                    "description": "wide-leg",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "accessory": [],
+            "footwear": [
+                {
+                    "oid": "c20ffd27-9b08-428d-b188-01804c162bd2",
+                    "article_type": "footwear",
+                    "article_subtype": "boots",
+                    "description": "thoroughgood moc-toe",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "c77ca597-3392-4774-83d9-a3aad6f3522b"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "28f9850c-75c2-470a-a335-1ed64089ceed",
+                    "article_type": "overshirt",
+                    "article_subtype": "oxford",
+                    "description": "light-blue-lined button-up",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "white"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "9167ca92-34c9-4016-aa3d-a7c8f4fc35f5",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "denim sherpa",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "blue"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "c3d79d95-1b39-4df5-92b9-d5da66fed189",
+                    "article_type": "pants",
+                    "article_subtype": "jeans",
+                    "description": "wide-leg",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "accessory": [],
+            "footwear": [
+                {
+                    "oid": "163625e7-831b-4886-85e5-43c74d60878d",
+                    "article_type": "footwear",
+                    "article_subtype": "boots",
+                    "description": "redwing moc-toe",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "brown"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "b2b2c1cd-068e-4c3d-b690-f447dfd66dbf"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "22fddb59-fb4d-4f69-80ee-0830151cb27c",
+                    "article_type": "overshirt",
+                    "article_subtype": "sweater",
+                    "description": "",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "red"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "9167ca92-34c9-4016-aa3d-a7c8f4fc35f5",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "denim sherpa",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "blue"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "43eb612e-5ce2-4d96-a7b5-718deacf3763",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "'ultimate'",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "accessory": [],
+            "footwear": [
+                {
+                    "oid": "bc1a3ddb-b93f-4706-8445-fd4066d57e9c",
+                    "article_type": "footwear",
+                    "article_subtype": "boots",
+                    "description": "thursday zip-up",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "84fc1ff8-ac19-4043-ae50-ffc0b32350f1"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "94d93d67-be0f-48ae-80a5-b05c4f8c799a",
+                    "article_type": "overshirt",
+                    "article_subtype": "oxford",
+                    "description": "dark-blue-lined button-up",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "white"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "9167ca92-34c9-4016-aa3d-a7c8f4fc35f5",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "denim sherpa",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "blue"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "71a1019f-e483-478f-9a88-16ee3ca3e14f",
+                    "article_type": "pants",
+                    "article_subtype": "jeans",
+                    "description": "skinny",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "accessory": [],
+            "footwear": [
+                {
+                    "oid": "adce1b5b-8f36-4510-bd5f-80aa7e5d4bbe",
+                    "article_type": "footwear",
+                    "article_subtype": "boots",
+                    "description": "thursday lace-up",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "brown"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "56527189-3eb0-4ea4-80b1-787bd1c5ace8"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "94d93d67-be0f-48ae-80a5-b05c4f8c799a",
+                    "article_type": "overshirt",
+                    "article_subtype": "oxford",
+                    "description": "dark-blue-lined button-up",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "white"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "59ebee65-2347-42f1-9e29-9c9ca7aa9104",
+                    "article_type": "outerwear",
+                    "article_subtype": "coat",
+                    "description": "slim single-breasted",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "c091580a-3991-40d2-92bd-942b7d23f224",
+                    "article_type": "pants",
+                    "article_subtype": "jeans",
+                    "description": "sun co. jeans",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "blue"
+                    ]
+                }
+            ],
+            "accessory": [],
+            "footwear": [
+                {
+                    "oid": "bc1a3ddb-b93f-4706-8445-fd4066d57e9c",
+                    "article_type": "footwear",
+                    "article_subtype": "boots",
+                    "description": "thursday zip-up",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "2dc09525-1fec-46a6-99db-08afa2b16530"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "7c8f7d6e-d694-46e9-8bfc-3875f6ab0752",
+                    "article_type": "overshirt",
+                    "article_subtype": "zip-up",
+                    "description": "adidas track-jacket",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "9167ca92-34c9-4016-aa3d-a7c8f4fc35f5",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "denim sherpa",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "blue"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "abe5ccf3-8820-43fe-a23d-55bef549c218",
+                    "article_type": "pants",
+                    "article_subtype": "jeans",
+                    "description": "skinny",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "dark-blue"
+                    ]
+                }
+            ],
+            "accessory": [
+                {
+                    "oid": "13603300-cbfa-446c-b3f1-27b07fa7f79f",
+                    "article_type": "accessory",
+                    "article_subtype": "bag",
+                    "description": "leather lv duffle",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                },
+                {
+                    "oid": "acc0641c-8788-4666-9239-0c7bfd7a5335",
+                    "article_type": "accessory",
+                    "article_subtype": "bracelet",
+                    "description": "hoop&chain",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "silver"
+                    ]
+                },
+                {
+                    "oid": "b305e679-ca0f-4947-8c6a-25635620cbd8",
+                    "article_type": "accessory",
+                    "article_subtype": "bracelet",
+                    "description": "project-comte",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "silver"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "05ead9ae-9540-444f-b125-1d20dde704a9",
+                    "article_type": "footwear",
+                    "article_subtype": "sneakers",
+                    "description": "converse",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "ab3998b8-7704-4f24-b401-2caa9fe6a86d"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "94d93d67-be0f-48ae-80a5-b05c4f8c799a",
+                    "article_type": "overshirt",
+                    "article_subtype": "oxford",
+                    "description": "dark-blue-lined button-up",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "white"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "59ebee65-2347-42f1-9e29-9c9ca7aa9104",
+                    "article_type": "outerwear",
+                    "article_subtype": "coat",
+                    "description": "slim single-breasted",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "63ba105c-6a8e-427c-b820-4a6a60997512",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "'ultimate'",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "accessory": [
+                {
+                    "oid": "df928ab0-9d38-4cad-a545-76b94b58716d",
+                    "article_type": "accessory",
+                    "article_subtype": "ring",
+                    "description": "7-sided honeycomb",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "silver"
+                    ]
+                },
+                {
+                    "oid": "321799d4-3761-4519-bec5-5df9ca59eecc",
+                    "article_type": "accessory",
+                    "article_subtype": "gloves",
+                    "description": "leather driving gloves",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                },
+                {
+                    "oid": "b305e679-ca0f-4947-8c6a-25635620cbd8",
+                    "article_type": "accessory",
+                    "article_subtype": "bracelet",
+                    "description": "project-comte",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "silver"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "e4c0fb8f-f164-461b-93fc-0f1eebcb58ac",
+                    "article_type": "footwear",
+                    "article_subtype": "dress-shoes",
+                    "description": "thursday",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "bbb8b033-5146-4f85-ad0e-c273f377ef06"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "d8f9c459-7f25-4068-8aa9-ce00a7106698",
+                    "article_type": "overshirt",
+                    "article_subtype": "sweater",
+                    "description": "cable-knit turtleneck",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "419e7ebb-b6e6-43d2-9990-56684377f83a",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "leather af",
+                    "weather": "any",
+                    "price": 400,
+                    "colors": [
+                        "brown"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "63ba105c-6a8e-427c-b820-4a6a60997512",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "'ultimate'",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "accessory": [
+                {
+                    "oid": "4a754eda-2c3c-48bc-b1c7-382a39ff43c9",
+                    "article_type": "accessory",
+                    "article_subtype": "ring",
+                    "description": "promises-made",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "silver"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "c20ffd27-9b08-428d-b188-01804c162bd2",
+                    "article_type": "footwear",
+                    "article_subtype": "boots",
+                    "description": "thoroughgood moc-toe",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "c849ae1f-be90-4807-9c70-47a27c53777b"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [],
+            "outerwear": [],
+            "pants": [],
+            "accessory": [],
+            "footwear": [],
+            "underpants": [],
+            "oid": "4c5eae34-3a81-4152-8a42-d307aba9edb6"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [],
+            "outerwear": [],
+            "pants": [],
+            "accessory": [],
+            "footwear": [],
+            "underpants": [],
+            "oid": "cdfad0bd-d154-42b9-80b5-bfea709bf782"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [],
+            "outerwear": [],
+            "pants": [],
+            "accessory": [],
+            "footwear": [],
+            "underpants": [],
+            "oid": "c0c1d4d8-d344-4646-ba6c-47a3bd87cb1e"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [],
+            "outerwear": [],
+            "pants": [],
+            "accessory": [],
+            "footwear": [],
+            "underpants": [],
+            "oid": "8d7e9138-1a71-43c2-b099-6d661ab05aa6"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "f728b482-177c-427c-aa25-3d2f60f8ff5e",
+                    "article_type": "overshirt",
+                    "article_subtype": "flannel",
+                    "description": "",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "red"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "59ebee65-2347-42f1-9e29-9c9ca7aa9104",
+                    "article_type": "outerwear",
+                    "article_subtype": "coat",
+                    "description": "slim single-breasted",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "63ba105c-6a8e-427c-b820-4a6a60997512",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "'ultimate'",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "accessory": [
+                {
+                    "oid": "ed269a1a-0274-44d0-9a84-8ce2f1b0b0ab",
+                    "article_type": "accessory",
+                    "article_subtype": "ring",
+                    "description": "personal fears sludge",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "silver"
+                    ]
+                },
+                {
+                    "oid": "c7e22046-3d9a-4ed0-ae6f-21d91dc82f12",
+                    "article_type": "accessory",
+                    "article_subtype": "necklace",
+                    "description": "chrome-hearts crosses pendant necklace",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "silver"
+                    ]
+                },
+                {
+                    "oid": "dea15e73-fde2-4e83-a960-2d701358454f",
+                    "article_type": "accessory",
+                    "article_subtype": "belt",
+                    "description": "leather",
+                    "weather": "any",
+                    "price": 40,
+                    "colors": [
+                        "brown"
+                    ]
+                },
+                {
+                    "oid": "dea15e73-fde2-4e83-a960-2d701358454f",
+                    "article_type": "accessory",
+                    "article_subtype": "belt",
+                    "description": "leather",
+                    "weather": "any",
+                    "price": 40,
+                    "colors": [
+                        "brown"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "adce1b5b-8f36-4510-bd5f-80aa7e5d4bbe",
+                    "article_type": "footwear",
+                    "article_subtype": "boots",
+                    "description": "thursday lace-up",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "brown"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "d2d9e04a-baf5-48a4-a3aa-2b980e52d7d0"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "c6660c87-27b2-4cdc-9a98-a183c7ae9a8a",
+                    "article_type": "overshirt",
+                    "article_subtype": "sweater",
+                    "description": "quarter-zip",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "white"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "ff78fd9c-5e9f-4731-8d05-6338fcd3dd04",
+                    "article_type": "outerwear",
+                    "article_subtype": "coat",
+                    "description": "wool",
+                    "weather": "any",
+                    "price": 300,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "63ba105c-6a8e-427c-b820-4a6a60997512",
+                    "article_type": "pants",
+                    "article_subtype": "chinos",
+                    "description": "'ultimate'",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "accessory": [
+                {
+                    "oid": "7f9633e5-bb3c-475a-b731-f7ed0cfd6f6a",
+                    "article_type": "accessory",
+                    "article_subtype": "headphones",
+                    "description": "apple wired earbuds",
+                    "weather": "any",
+                    "price": 30,
+                    "colors": [
+                        "white"
+                    ]
+                },
+                {
+                    "oid": "832f3db7-3258-40bf-ab6e-f2053834ce7f",
+                    "article_type": "accessory",
+                    "article_subtype": "ring",
+                    "description": "personal-fears ribcage",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "silver"
+                    ]
+                },
+                {
+                    "oid": "321799d4-3761-4519-bec5-5df9ca59eecc",
+                    "article_type": "accessory",
+                    "article_subtype": "gloves",
+                    "description": "leather driving gloves",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                },
+                {
+                    "oid": "d3355fbd-96e6-4533-ac0f-377ccbb2dc56",
+                    "article_type": "accessory",
+                    "article_subtype": "ring",
+                    "description": "project-comte statement ring",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "grey"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "e4c0fb8f-f164-461b-93fc-0f1eebcb58ac",
+                    "article_type": "footwear",
+                    "article_subtype": "dress-shoes",
+                    "description": "thursday",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "1ea7b564-ce15-462b-8f59-266ce27120a2"
+        },
+        {
+            "headwear": [],
+            "undershirt": [],
+            "overshirt": [
+                {
+                    "oid": "19c9b3bb-af2a-4557-a799-7ffc0adc362a",
+                    "article_type": "overshirt",
+                    "article_subtype": "flannel",
+                    "description": "&blue button-down",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "light-grey"
+                    ]
+                }
+            ],
+            "outerwear": [
+                {
+                    "oid": "419e7ebb-b6e6-43d2-9990-56684377f83a",
+                    "article_type": "outerwear",
+                    "article_subtype": "jacket",
+                    "description": "leather af",
+                    "weather": "any",
+                    "price": 400,
+                    "colors": [
+                        "brown"
+                    ]
+                }
+            ],
+            "pants": [
+                {
+                    "oid": "628a1b4f-6dcd-4155-920c-eb53d403da54",
+                    "article_type": "pants",
+                    "article_subtype": "jeans",
+                    "description": "viktos operator",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "accessory": [
+                {
+                    "oid": "3c5828f4-fafc-40b2-9316-3c8ac0ab2d80",
+                    "article_type": "accessory",
+                    "article_subtype": "necklace",
+                    "description": "simple chain",
+                    "weather": "any",
+                    "price": 0,
+                    "colors": [
+                        "silver"
+                    ]
+                },
+                {
+                    "oid": "26df3b29-ca9f-403d-a216-c5c14068f881",
+                    "article_type": "accessory",
+                    "article_subtype": "headphones",
+                    "description": "sony wx5-1000",
+                    "weather": "any",
+                    "price": 300,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "footwear": [
+                {
+                    "oid": "bc1a3ddb-b93f-4706-8445-fd4066d57e9c",
+                    "article_type": "footwear",
+                    "article_subtype": "boots",
+                    "description": "thursday zip-up",
+                    "weather": "any",
+                    "price": 200,
+                    "colors": [
+                        "black"
+                    ]
+                }
+            ],
+            "underpants": [],
+            "oid": "b9cc3124-60b2-4456-82f6-d9737c60383a"
         }
     ]
 }
