@@ -147,7 +147,7 @@ class Wardrobe():
         if article in self.data[article.article_type]:
             self.data[article.article_type].remove(article)
         else:
-            print("Article not found in '{0}'".format(article_type))
+            print("Article not found in '{0}'".format(article.article_type))
 
     def list_by_type(self, article_type: str) -> List:
 
@@ -247,7 +247,7 @@ class WardrobeGenerator():
             self.uses = self.fixed_data['uses']
 
 
-        except JSONDecodeError as jsonde:
+        except json.JSONDecodeError as jsonde:
             print("Failed to load application data.")
             debug("Error:",jsonde)
             sys.exit(1)
@@ -348,7 +348,7 @@ class WardrobeGenerator():
 
                 if len(items) > 1:
                     print("{0} items selected:".format(len(items)))
-                    display_articles(articles)
+                    display_articles(items)
                 else:
                     self.wardrobe.remove_article(items[0])
 
@@ -378,7 +378,6 @@ class WardrobeGenerator():
 
             for article in articles:
                 print('article:',article.summary())
-
 
     def handle_generate_cli(self, args):
         debug('handle_generate_cli({0})'.format(','.join(args)))
